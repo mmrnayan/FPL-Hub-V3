@@ -1,0 +1,1431 @@
+2026-09-03 22:33:35,128 - INFO - FPL Pipeline Orchestrator Started
+2026-09-03 22:33:35,129 - INFO - Season: 2627
+2026-09-03 22:33:35,129 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-03 22:33:35,210 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-03 22:33:35,222 - INFO - ============================================================
+2026-09-03 22:33:35,222 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-03 22:33:35,222 - INFO - ============================================================
+2026-09-03 22:33:35,222 - WARNING - Script not found: C:\Users\JesseOnu\fpl sql rework\files to run\gameweek_pull.py
+2026-09-03 22:33:35,223 - WARNING - Script not found: C:\Users\JesseOnu\fpl sql rework\files to run\fpl_player_pull-.py
+2026-09-03 22:33:35,223 - WARNING - Script not found: C:\Users\JesseOnu\fpl sql rework\files to run\sql_table_upload_script.py
+2026-09-03 22:33:35,223 - WARNING - Failed scripts: gameweek_pull, fpl_player_pull, sql_upload
+2026-09-03 22:33:35,248 - INFO - No upcoming fixtures in next 7 days
+2026-09-03 22:33:35,248 - INFO - Pipeline orchestrator completed
+2026-09-04 10:12:24,589 - INFO - FPL Pipeline Orchestrator Started
+2026-09-04 10:12:24,595 - INFO - Season: 2627
+2026-09-04 10:12:24,595 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-04 10:12:24,825 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-04 10:12:24,826 - INFO - ============================================================
+2026-09-04 10:12:24,826 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-04 10:12:24,826 - INFO - ============================================================
+2026-09-04 10:12:24,826 - INFO - Starting: gameweek_pull
+2026-09-04 10:12:39,827 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-04 10:12:39,928 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-04 10:12:40,180 - INFO - Completed: gameweek_pull
+2026-09-04 10:12:40,181 - INFO - Waiting 30s before next task...
+2026-09-04 10:13:10,182 - INFO - Starting: fpl_player_pull
+2026-09-04 10:13:11,071 - INFO - Completed: fpl_player_pull
+2026-09-04 10:13:11,071 - INFO - Waiting 30s before next task...
+2026-09-04 10:13:41,071 - WARNING - Script not found: C:\Users\JesseOnu\fpl sql rework\files to runn\sql_table_upload_script.py
+2026-09-04 10:13:41,072 - WARNING - Failed scripts: sql_upload
+2026-09-04 10:13:41,092 - INFO - No upcoming fixtures in next 7 days
+2026-09-04 10:13:41,092 - INFO - Pipeline orchestrator completed
+2026-09-04 10:17:45,199 - INFO - FPL Pipeline Orchestrator Started
+2026-09-04 10:17:45,200 - INFO - Season: 2627
+2026-09-04 10:17:45,200 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-04 10:17:45,206 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-04 10:17:45,206 - INFO - ============================================================
+2026-09-04 10:17:45,206 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-04 10:17:45,206 - INFO - ============================================================
+2026-09-04 10:17:45,207 - INFO - Starting: gameweek_pull
+2026-09-04 10:18:00,208 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-04 10:18:00,309 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-04 10:18:00,396 - INFO - Completed: gameweek_pull
+2026-09-04 10:18:00,396 - INFO - Waiting 30s before next task...
+2026-09-04 10:18:30,397 - INFO - Starting: fpl_player_pull
+2026-09-04 10:18:31,157 - INFO - Completed: fpl_player_pull
+2026-09-04 10:18:31,158 - INFO - Waiting 30s before next task...
+2026-09-04 10:19:01,158 - INFO - Starting: sql_upload
+2026-09-04 10:19:06,815 - ERROR - Failed: sql_upload
+2026-09-04 10:19:06,816 - ERROR - Error: C:\Users\JesseOnu\fpl sql rework\files to runn\sql_table_upload_script.py:33: SAWarning: Unrecognized server version info '17.0.1000.7'.  Some SQL Server features may not function properly.
+  with engine.connect() as conn:
+Traceback (most recent call last):
+  File "C:\Users\JesseOnu\fpl sql rework\files to runn\sql_table_upload_script.py", line 80, in <module>
+    teams = combine_upload_tosql(teampath, "stg_team", engine)
+  File "C:\Users\JesseOnu\fpl sql rework\files to runn\sql_table_upload_script.py", line 73, in combine_upload_tosql
+    print(f"\u2705 Finished loading {tablename} from {len(files)} files")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+2026-09-04 10:19:06,816 - WARNING - Failed scripts: sql_upload
+2026-09-04 10:19:06,834 - INFO - No upcoming fixtures in next 7 days
+2026-09-04 10:19:06,836 - INFO - Pipeline orchestrator completed
+2026-09-04 10:22:51,541 - INFO - FPL Pipeline Orchestrator Started
+2026-09-04 10:22:51,541 - INFO - Season: 2627
+2026-09-04 10:22:51,541 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-04 10:22:51,547 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-04 10:22:51,547 - INFO - ============================================================
+2026-09-04 10:22:51,547 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-04 10:22:51,547 - INFO - ============================================================
+2026-09-04 10:22:51,547 - INFO - Starting: gameweek_pull
+2026-09-04 10:23:06,548 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-04 10:23:06,649 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-04 10:23:06,726 - INFO - Completed: gameweek_pull
+2026-09-04 10:23:06,726 - INFO - Waiting 30s before next task...
+2026-09-04 10:23:36,727 - INFO - Starting: fpl_player_pull
+2026-09-04 10:23:37,492 - INFO - Completed: fpl_player_pull
+2026-09-04 10:23:37,492 - INFO - Waiting 30s before next task...
+2026-09-04 10:24:07,494 - INFO - Starting: sql_upload
+2026-09-04 10:24:17,110 - INFO - Completed: sql_upload
+2026-09-04 10:24:17,110 - INFO - All daily tasks completed successfully
+2026-09-04 10:24:17,131 - INFO - No upcoming fixtures in next 7 days
+2026-09-04 10:24:17,131 - INFO - Pipeline orchestrator completed
+2026-09-04 11:06:18,907 - INFO - FPL Pipeline Orchestrator Started
+2026-09-04 11:06:18,914 - INFO - Season: 2627
+2026-09-04 11:06:18,915 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-04 11:06:19,180 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-04 11:06:19,181 - INFO - ============================================================
+2026-09-04 11:06:19,181 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-04 11:06:19,182 - INFO - ============================================================
+2026-09-04 11:06:19,182 - INFO - Starting: gameweek_pull
+2026-09-04 11:06:34,182 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-04 11:06:34,284 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-04 11:06:34,606 - INFO - Completed: gameweek_pull
+2026-09-04 11:06:34,607 - INFO - Waiting 30s before next task...
+2026-09-04 11:07:04,608 - INFO - Starting: fpl_player_pull
+2026-09-04 11:07:05,590 - INFO - Completed: fpl_player_pull
+2026-09-04 11:07:05,590 - INFO - Waiting 30s before next task...
+2026-09-04 11:07:35,591 - INFO - Starting: sql_upload
+2026-09-04 11:07:48,231 - INFO - Completed: sql_upload
+2026-09-04 11:07:48,232 - INFO - All daily tasks completed successfully
+2026-09-04 11:07:48,542 - INFO - Found 10 fixtures in next 7 days
+2026-09-04 11:07:48,552 - INFO - First fixture: None vs None
+2026-09-04 11:07:48,553 - INFO - Kick-off: 2026-09-04 19:00:00
+2026-09-04 11:07:48,553 - INFO - Tasks will run at: 2026-09-04 21:00:00
+2026-09-04 11:07:48,553 - INFO - Next gameday tasks scheduled for: 2026-09-04 21:00:00
+2026-09-04 11:07:48,553 - INFO - Waiting 592.2 minutes...
+2026-09-04 11:13:00,604 - INFO - FPL Pipeline Orchestrator Started
+2026-09-04 11:13:00,605 - INFO - Season: 2627
+2026-09-04 11:13:00,605 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-04 11:13:00,611 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-04 11:13:00,612 - INFO - ============================================================
+2026-09-04 11:13:00,612 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-04 11:13:00,612 - INFO - ============================================================
+2026-09-04 11:13:00,612 - INFO - Starting: gameweek_pull
+2026-09-04 11:13:15,613 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-04 11:13:15,715 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-04 11:13:15,785 - INFO - Completed: gameweek_pull
+2026-09-04 11:13:15,786 - INFO - Waiting 30s before next task...
+2026-09-04 11:13:45,787 - INFO - Starting: fpl_player_pull
+2026-09-04 11:13:46,583 - INFO - Completed: fpl_player_pull
+2026-09-04 11:13:46,584 - INFO - Waiting 30s before next task...
+2026-09-04 11:14:16,585 - INFO - Starting: sql_upload
+2026-09-04 11:14:33,015 - INFO - Completed: sql_upload
+2026-09-04 11:14:33,016 - INFO - All daily tasks completed successfully
+2026-09-04 11:14:33,296 - INFO - Found 10 fixtures in next 7 days
+2026-09-04 11:14:33,296 - INFO - First fixture: None vs None
+2026-09-04 11:14:33,297 - INFO - Kick-off: 2026-09-04 19:00:00
+2026-09-04 11:14:33,297 - INFO - Tasks will run at: 2026-09-04 21:00:00
+2026-09-04 11:14:33,297 - INFO - Next gameday tasks scheduled for: 2026-09-04 21:00:00
+2026-09-04 11:14:33,297 - INFO - Waiting 585.4 minutes...
+2026-09-04 11:16:39,153 - INFO - FPL Pipeline Orchestrator Started
+2026-09-04 11:16:39,153 - INFO - Season: 2627
+2026-09-04 11:16:39,154 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-04 11:16:39,160 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-04 11:16:39,160 - INFO - ============================================================
+2026-09-04 11:16:39,160 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-04 11:16:39,161 - INFO - ============================================================
+2026-09-04 11:16:39,161 - INFO - Starting: gameweek_pull
+2026-09-04 11:16:54,161 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-04 11:16:54,263 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-04 11:21:07,125 - INFO - FPL Pipeline Orchestrator Started
+2026-09-04 11:21:07,126 - INFO - Season: 2627
+2026-09-04 11:21:07,126 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-04 11:21:07,132 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-04 11:21:07,132 - INFO - ============================================================
+2026-09-04 11:21:07,132 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-04 11:21:07,132 - INFO - ============================================================
+2026-09-04 11:21:07,132 - INFO - Starting: gameweek_pull
+2026-09-04 11:21:22,133 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-04 11:21:22,235 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-04 11:21:22,307 - INFO - Completed: gameweek_pull
+2026-09-04 11:21:22,307 - INFO - Waiting 30s before next task...
+2026-09-04 11:21:52,308 - INFO - Starting: fpl_player_pull
+2026-09-04 11:21:53,081 - INFO - Completed: fpl_player_pull
+2026-09-04 11:21:53,201 - INFO - Waiting 30s before next task...
+2026-09-04 11:22:23,202 - INFO - Starting: sql_upload
+2026-09-04 11:22:32,804 - INFO - Completed: sql_upload
+2026-09-04 11:22:32,804 - INFO - All daily tasks completed successfully
+2026-09-04 11:22:32,977 - INFO - Found 10 fixtures in next 7 days
+2026-09-04 11:22:32,977 - INFO - First fixture: None vs None
+2026-09-04 11:22:32,978 - INFO - Kick-off: 2026-09-04 19:00:00
+2026-09-04 11:22:32,978 - INFO - Tasks will run at: 2026-09-04 22:00:00
+2026-09-04 11:22:32,978 - INFO - Next gameday tasks scheduled for: 2026-09-04 21:00:00
+2026-09-04 11:22:32,978 - INFO - Waiting 577.5 minutes...
+2026-09-04 21:00:00,003 - INFO - ============================================================
+2026-09-04 21:00:00,006 - INFO - RUNNING GAMEDAY TASKS
+2026-09-04 21:00:00,006 - INFO - ============================================================
+2026-09-04 21:00:00,007 - INFO - Starting: get_fixtures
+2026-09-04 21:00:16,363 - INFO - Completed: get_fixtures
+2026-09-04 21:00:16,363 - INFO - Waiting 30s before next task...
+2026-09-04 21:00:46,364 - INFO - Starting: fantasy_gw_data
+2026-09-04 21:00:47,317 - ERROR - Failed: fantasy_gw_data
+2026-09-04 21:00:47,317 - ERROR - Error: Traceback (most recent call last):
+  File "C:\Users\JesseOnu\fpl sql rework\files to runn\fantasy_gw_data.py", line 68, in get_gameweeks_data
+    print(f"\u2705 Successfully loaded {len(df)} gameweeks.")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\JesseOnu\fpl sql rework\files to runn\fantasy_gw_data.py", line 81, in <module>
+    gw_df = get_gameweeks_data()
+  File "C:\Users\JesseOnu\fpl sql rework\files to runn\fantasy_gw_data.py", line 75, in get_gameweeks_data
+    print(f"\u274c Error: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+
+2026-09-04 21:00:47,318 - INFO - Starting: gameweek_pull
+2026-09-04 21:01:02,319 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-04 21:01:02,421 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-04 21:10:47,345 - ERROR - Timeout: gameweek_pull exceeded 10 minutes
+2026-09-04 21:10:47,346 - INFO - Starting: player_scores
+2026-09-04 21:10:51,447 - INFO - Completed: player_scores
+2026-09-04 21:10:51,447 - INFO - Waiting 30s before next task...
+2026-09-04 21:11:21,448 - INFO - Starting: sql_upload
+2026-09-04 21:11:34,460 - INFO - Completed: sql_upload
+2026-09-04 21:11:34,461 - WARNING - Failed scripts: fantasy_gw_data, gameweek_pull
+2026-09-04 21:11:34,461 - INFO - Pipeline orchestrator completed
+2026-09-04 21:40:27,893 - INFO - FPL Pipeline Orchestrator Started
+2026-09-04 21:40:27,894 - INFO - Season: 2627
+2026-09-04 21:40:27,894 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-04 21:40:27,901 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-04 21:40:27,901 - INFO - ============================================================
+2026-09-04 21:40:27,901 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-04 21:40:27,901 - INFO - ============================================================
+2026-09-04 21:40:27,902 - INFO - Starting: gameweek_pull
+2026-09-04 21:40:42,902 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-04 21:40:43,003 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-04 21:40:43,076 - INFO - Completed: gameweek_pull
+2026-09-04 21:40:43,076 - INFO - Waiting 30s before next task...
+2026-09-04 21:41:13,076 - INFO - Starting: fpl_player_pull
+2026-09-04 21:41:13,890 - INFO - Completed: fpl_player_pull
+2026-09-04 21:41:13,891 - INFO - Waiting 30s before next task...
+2026-09-04 21:41:43,892 - INFO - Starting: sql_upload
+2026-09-04 21:41:52,737 - INFO - Completed: sql_upload
+2026-09-04 21:41:52,737 - INFO - All daily tasks completed successfully
+2026-09-04 21:41:52,900 - INFO - Found 9 fixtures in next 7 days
+2026-09-04 21:41:52,901 - INFO - First fixture: None vs None
+2026-09-04 21:41:52,901 - INFO - Kick-off: 2026-09-05 11:30:00
+2026-09-04 21:41:52,901 - INFO - Tasks will run at: 2026-09-05 14:30:00
+2026-09-04 21:41:52,902 - INFO - Next gameday tasks scheduled for: 2026-09-05 13:30:00
+2026-09-04 21:41:52,902 - INFO - Waiting 948.1 minutes...
+2026-09-04 21:57:36,334 - INFO - FPL Pipeline Orchestrator Started
+2026-09-04 21:57:36,334 - INFO - Season: 2627
+2026-09-04 21:57:36,335 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-04 21:57:36,341 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-04 21:57:36,341 - INFO - ============================================================
+2026-09-04 21:57:36,341 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-04 21:57:36,341 - INFO - ============================================================
+2026-09-04 21:57:36,341 - INFO - Starting: gameweek_pull
+2026-09-04 21:57:51,342 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-04 21:57:51,444 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-04 22:01:43,743 - INFO - FPL Pipeline Orchestrator Started
+2026-09-04 22:01:43,744 - INFO - Season: 2627
+2026-09-04 22:01:43,744 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-04 22:01:43,750 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-04 22:01:43,751 - INFO - ============================================================
+2026-09-04 22:01:43,751 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-04 22:01:43,751 - INFO - ============================================================
+2026-09-04 22:01:43,751 - INFO - Starting: gameweek_pull
+2026-09-04 22:01:58,752 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-04 22:01:58,853 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-04 22:01:58,943 - INFO - Completed: gameweek_pull
+2026-09-04 22:01:58,943 - INFO - Waiting 30s before next task...
+2026-09-04 22:02:28,944 - INFO - Starting: fpl_player_pull
+2026-09-04 22:02:29,770 - INFO - Completed: fpl_player_pull
+2026-09-04 22:02:29,770 - INFO - Waiting 30s before next task...
+2026-09-04 22:02:59,770 - INFO - Starting: sql_upload
+2026-09-04 22:03:08,648 - INFO - Completed: sql_upload
+2026-09-04 22:03:08,648 - INFO - All daily tasks completed successfully
+2026-09-04 22:03:08,820 - INFO - Found 9 fixtures in next 7 days
+2026-09-04 22:03:08,820 - INFO - 
+2026-09-04 22:03:08,821 - INFO - Fixture: None vs None
+2026-09-04 22:03:08,821 - INFO - Kick-off: 2026-09-05 11:30:00
+2026-09-04 22:03:08,821 - INFO - Gameday tasks will run at: 2026-09-05 14:30:00
+2026-09-04 22:03:08,821 - INFO - Next gameday tasks scheduled for: 2026-09-05 13:30:00
+2026-09-04 22:03:08,821 - INFO - Waiting 926.9 minutes...
+2026-09-05 00:59:11,525 - INFO - FPL Pipeline Orchestrator Started
+2026-09-05 00:59:11,532 - INFO - Season: 2627
+2026-09-05 00:59:11,532 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-05 00:59:11,562 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-05 00:59:11,563 - INFO - ============================================================
+2026-09-05 00:59:11,563 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-05 00:59:11,563 - INFO - ============================================================
+2026-09-05 00:59:11,578 - INFO - Starting: gameweek_pull
+2026-09-05 00:59:26,578 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-05 00:59:26,680 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-05 00:59:26,765 - INFO - Completed: gameweek_pull
+2026-09-05 00:59:26,765 - INFO - Waiting 30s before next task...
+2026-09-05 00:59:56,766 - INFO - Starting: fpl_player_pull
+2026-09-05 00:59:57,536 - INFO - Completed: fpl_player_pull
+2026-09-05 00:59:57,537 - INFO - Waiting 30s before next task...
+2026-09-05 01:00:27,537 - INFO - Starting: sql_upload
+2026-09-05 01:00:39,624 - INFO - Completed: sql_upload
+2026-09-05 01:00:39,624 - INFO - All daily tasks completed successfully
+2026-09-05 01:00:39,795 - INFO - Found 9 fixtures in next 7 days
+2026-09-05 01:00:39,795 - INFO - 
+2026-09-05 01:00:39,795 - INFO - Fixture: None vs None
+2026-09-05 01:00:39,795 - INFO - Kick-off: 2026-09-05 11:30:00
+2026-09-05 01:00:39,795 - INFO - Gameday tasks will run at: 2026-09-05 14:30:00
+2026-09-05 01:00:39,795 - INFO - Next gameday tasks scheduled for: 2026-09-05 13:30:00
+2026-09-05 01:00:39,795 - INFO - Waiting 749.3 minutes...
+2026-09-05 13:30:03,015 - INFO - ============================================================
+2026-09-05 13:30:03,445 - INFO - RUNNING GAMEDAY TASKS
+2026-09-05 13:30:03,445 - INFO - ============================================================
+2026-09-05 13:30:03,494 - INFO - Starting: get_fixtures
+2026-09-05 13:30:06,877 - INFO - Completed: get_fixtures
+2026-09-05 13:30:06,877 - INFO - Waiting 30s before next task...
+2026-09-05 13:30:36,878 - INFO - Starting: fantasy_gw_data
+2026-09-05 13:30:38,296 - ERROR - Failed: fantasy_gw_data
+2026-09-05 13:30:38,296 - ERROR - Error: Traceback (most recent call last):
+  File "C:\Users\JesseOnu\fpl sql rework\files to runn\fantasy_gw_data.py", line 101, in <module>
+    df['stats'][1]
+    ^^
+NameError: name 'df' is not defined
+
+2026-09-05 13:30:38,296 - INFO - Starting: gameweek_pull
+2026-09-05 13:30:53,349 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-05 13:30:53,726 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-05 13:40:38,802 - ERROR - Timeout: gameweek_pull exceeded 10 minutes
+2026-09-05 13:40:38,803 - INFO - Starting: player_scores
+2026-09-05 13:40:40,468 - INFO - Completed: player_scores
+2026-09-05 13:40:40,498 - INFO - Waiting 30s before next task...
+2026-09-05 13:41:10,519 - INFO - Starting: sql_upload
+2026-09-05 13:41:26,163 - INFO - Completed: sql_upload
+2026-09-05 13:41:26,178 - WARNING - Failed scripts: fantasy_gw_data, gameweek_pull
+2026-09-05 13:41:26,189 - INFO - Completed gameday tasks for None vs None
+2026-09-05 13:41:26,189 - INFO - 
+2026-09-05 13:41:26,207 - INFO - 
+2026-09-05 13:41:26,208 - INFO - Fixture: None vs None
+2026-09-05 13:41:26,418 - INFO - Kick-off: 2026-09-05 14:00:00
+2026-09-05 13:41:26,418 - INFO - Gameday tasks will run at: 2026-09-05 17:00:00
+2026-09-05 13:41:26,755 - INFO - Next gameday tasks scheduled for: 2026-09-05 16:00:00
+2026-09-05 13:41:26,755 - INFO - Waiting 138.6 minutes...
+2026-09-05 16:01:02,110 - INFO - FPL Pipeline Orchestrator Started
+2026-09-05 16:01:02,111 - INFO - Season: 2627
+2026-09-05 16:01:02,111 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-05 16:01:03,465 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-05 16:01:03,465 - INFO - ============================================================
+2026-09-05 16:01:03,465 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-05 16:01:03,465 - INFO - ============================================================
+2026-09-05 16:01:03,466 - INFO - Starting: gameweek_pull
+2026-09-05 16:01:28,466 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-05 16:01:28,568 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-05 16:01:28,704 - INFO - Completed: gameweek_pull
+2026-09-05 16:01:28,704 - INFO - Waiting 20s before next task...
+2026-09-05 16:01:48,704 - INFO - Starting: fpl_player_pull
+2026-09-05 16:01:49,545 - INFO - Completed: fpl_player_pull
+2026-09-05 16:01:49,545 - INFO - Waiting 20s before next task...
+2026-09-05 16:02:09,546 - INFO - Starting: sql_upload
+2026-09-05 16:02:29,750 - INFO - Completed: sql_upload
+2026-09-05 16:02:29,750 - INFO - All daily tasks completed successfully
+2026-09-05 16:02:30,159 - INFO - Found 8 fixtures in next 7 days
+2026-09-05 16:02:30,159 - INFO - 
+2026-09-05 16:02:30,159 - INFO - Fixture: None vs None
+2026-09-05 16:02:30,160 - INFO - Kick-off: 2026-09-05 16:30:00
+2026-09-05 16:02:30,160 - INFO - Gameday tasks will run at: 2026-09-05 19:30:00
+2026-09-05 16:02:30,160 - INFO - Next gameday tasks scheduled for: 2026-09-05 18:30:00
+2026-09-05 16:02:30,160 - INFO - Waiting 147.5 minutes...
+2026-09-05 16:10:39,585 - INFO - FPL Pipeline Orchestrator Started
+2026-09-05 16:10:39,585 - INFO - Season: 2627
+2026-09-05 16:10:39,585 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-05 16:10:39,591 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-05 16:10:39,592 - INFO - ============================================================
+2026-09-05 16:10:39,592 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-05 16:10:39,592 - INFO - ============================================================
+2026-09-05 16:10:39,592 - INFO - Starting: gameweek_pull
+2026-09-05 16:11:04,592 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-05 16:11:04,694 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-05 16:20:39,625 - ERROR - Timeout: gameweek_pull exceeded 10 minutes
+2026-09-05 16:20:39,626 - INFO - Starting: fpl_player_pull
+2026-09-05 16:20:40,489 - INFO - Completed: fpl_player_pull
+2026-09-05 16:20:40,489 - INFO - Waiting 20s before next task...
+2026-09-05 16:21:00,491 - INFO - Starting: sql_upload
+2026-09-05 16:21:08,696 - INFO - Completed: sql_upload
+2026-09-05 16:21:08,696 - WARNING - Failed scripts: gameweek_pull
+2026-09-05 16:21:08,880 - INFO - Found 8 fixtures in next 7 days
+2026-09-05 16:21:08,881 - INFO - 
+2026-09-05 16:21:08,882 - INFO - Fixture: None vs None
+2026-09-05 16:21:08,882 - INFO - Kick-off: 2026-09-05 16:30:00
+2026-09-05 16:21:08,882 - INFO - Gameday tasks will run at: 2026-09-05 19:30:00
+2026-09-05 16:21:08,882 - INFO - Next gameday tasks scheduled for: 2026-09-05 18:30:00
+2026-09-05 16:21:08,883 - INFO - Waiting 128.9 minutes...
+2026-09-05 17:16:39,857 - INFO - FPL Pipeline Orchestrator Started
+2026-09-05 17:16:39,857 - INFO - Season: 2627
+2026-09-05 17:16:39,857 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-05 17:16:39,863 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-05 17:16:39,863 - INFO - ============================================================
+2026-09-05 17:16:39,863 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-05 17:16:39,863 - INFO - ============================================================
+2026-09-05 17:16:39,882 - INFO - Starting: gameweek_pull
+2026-09-05 17:17:04,883 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-05 17:17:04,984 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-05 17:26:39,909 - ERROR - Timeout: gameweek_pull exceeded 10 minutes
+2026-09-05 17:26:39,911 - INFO - Starting: fpl_player_pull
+2026-09-05 17:26:40,606 - INFO - Completed: fpl_player_pull
+2026-09-05 17:26:40,606 - INFO - Waiting 35s before next task...
+2026-09-05 17:27:15,607 - INFO - Starting: sql_upload
+2026-09-05 17:27:24,925 - INFO - Completed: sql_upload
+2026-09-05 17:27:24,925 - WARNING - Failed scripts: gameweek_pull
+2026-09-05 17:27:25,097 - INFO - Found 8 fixtures in next 7 days
+2026-09-05 17:27:25,097 - INFO - 
+2026-09-05 17:27:25,097 - INFO - Fixture: None vs None
+2026-09-05 17:27:25,098 - INFO - Kick-off: 2026-09-06 13:00:00
+2026-09-05 17:27:25,098 - INFO - Gameday tasks will run at: 2026-09-06 16:00:00
+2026-09-05 17:27:25,098 - INFO - Next gameday tasks scheduled for: 2026-09-06 15:00:00
+2026-09-05 17:27:25,098 - INFO - Waiting 1292.6 minutes...
+2026-09-05 21:50:42,546 - INFO - FPL Pipeline Orchestrator Started
+2026-09-05 21:50:42,546 - INFO - Season: 2627
+2026-09-05 21:50:42,546 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-05 21:50:42,553 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-05 21:50:42,553 - INFO - ============================================================
+2026-09-05 21:50:42,553 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-05 21:50:42,553 - INFO - ============================================================
+2026-09-05 21:50:42,603 - INFO - Waiting 25s before simulating Enter for gameweek_pull...
+2026-09-05 21:50:42,603 - INFO - Starting: gameweek_pull
+2026-09-05 21:51:07,603 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-05 21:51:07,705 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-05 21:51:07,793 - INFO - Completed: gameweek_pull
+2026-09-05 21:51:07,793 - INFO - Waiting 20s before next task...
+2026-09-05 21:51:27,794 - INFO - Starting: fpl_player_pull
+2026-09-05 21:51:28,603 - INFO - Completed: fpl_player_pull
+2026-09-05 21:51:28,603 - INFO - Waiting 20s before next task...
+2026-09-05 21:51:48,604 - INFO - Starting: sql_upload
+2026-09-05 21:51:58,589 - INFO - Completed: sql_upload
+2026-09-05 21:51:58,589 - INFO - All daily tasks completed successfully
+2026-09-05 21:51:58,749 - INFO - Found 9 fixtures in next 7 days
+2026-09-05 21:51:58,749 - INFO - 
+2026-09-05 21:51:58,749 - INFO - Fixture: None vs None
+2026-09-05 21:51:58,749 - INFO - Kick-off: 2026-09-06 13:00:00
+2026-09-05 21:51:58,749 - INFO - Gameday tasks will run at: 2026-09-06 16:00:00
+2026-09-05 21:51:58,749 - INFO - Next gameday tasks scheduled for: 2026-09-06 16:00:00
+2026-09-05 21:51:58,749 - INFO - Waiting 1088.0 minutes...
+2026-09-05 22:45:10,252 - INFO - FPL Pipeline Orchestrator Started
+2026-09-05 22:45:10,252 - INFO - Season: 2627
+2026-09-05 22:45:10,252 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-05 22:45:10,336 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-05 22:45:10,336 - INFO - ============================================================
+2026-09-05 22:45:10,336 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-05 22:45:10,337 - INFO - ============================================================
+2026-09-05 22:45:10,353 - INFO - Waiting 25s before simulating Enter for gameweek_pull...
+2026-09-05 22:45:10,354 - INFO - Starting: gameweek_pull
+2026-09-05 22:45:35,354 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-05 22:45:35,455 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-05 22:45:35,727 - INFO - Completed: gameweek_pull
+2026-09-05 22:45:35,727 - INFO - Waiting 20s before next task...
+2026-09-05 22:45:55,728 - INFO - Starting: fpl_player_pull
+2026-09-05 22:45:56,720 - INFO - Completed: fpl_player_pull
+2026-09-05 22:45:56,721 - INFO - Waiting 20s before next task...
+2026-09-05 22:46:16,721 - INFO - Starting: sql_upload
+2026-09-05 22:46:35,182 - INFO - Completed: sql_upload
+2026-09-05 22:46:35,183 - INFO - All daily tasks completed successfully
+2026-09-05 22:46:35,430 - INFO - Found 9 fixtures in next 7 days
+2026-09-05 22:46:35,430 - INFO - 
+2026-09-05 22:46:35,430 - INFO - Fixture: None vs None
+2026-09-05 22:46:35,430 - INFO - Kick-off: 2026-09-06 13:00:00
+2026-09-05 22:46:35,430 - INFO - Gameday tasks will run at: 2026-09-06 16:00:00
+2026-09-05 22:46:35,431 - INFO - Next gameday tasks scheduled for: 2026-09-06 16:00:00
+2026-09-05 22:46:35,431 - INFO - Waiting 1033.4 minutes...
+2026-09-05 22:52:01,913 - INFO - FPL Pipeline Orchestrator Started
+2026-09-05 22:52:01,914 - INFO - Season: 2627
+2026-09-05 22:52:01,914 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-05 22:52:02,092 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-05 22:52:02,092 - INFO - ============================================================
+2026-09-05 22:52:02,092 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-05 22:52:02,092 - INFO - ============================================================
+2026-09-05 22:52:02,962 - INFO - Waiting 25s before simulating Enter for gameweek_pull...
+2026-09-05 22:52:02,962 - INFO - Starting: gameweek_pull
+2026-09-05 22:52:27,972 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-05 22:52:28,073 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-05 22:52:28,150 - INFO - Completed: gameweek_pull
+2026-09-05 22:52:28,150 - INFO - Waiting 20s before next task...
+2026-09-05 22:52:48,150 - INFO - Starting: fpl_player_pull
+2026-09-05 22:52:48,924 - INFO - Completed: fpl_player_pull
+2026-09-05 22:52:48,924 - INFO - Waiting 20s before next task...
+2026-09-05 22:53:08,925 - WARNING - Script not found: C:\Users\JesseOnu\fpl sql rework\files to runn\get_fixtures.py
+2026-09-05 22:53:08,925 - INFO - Starting: fantasy_gw_data
+2026-09-05 22:53:09,759 - ERROR - Failed: fantasy_gw_data
+2026-09-05 22:53:09,769 - ERROR - Error: Traceback (most recent call last):
+  File "C:\Users\JesseOnu\fpl sql rework\files to runn\fantasy_gw_data.py", line 101, in <module>
+    df['stats'][1]
+    ^^
+NameError: name 'df' is not defined
+
+2026-09-05 22:53:09,769 - INFO - Waiting 20s before next task...
+2026-09-05 22:53:29,770 - INFO - Starting: sql_upload
+2026-09-05 22:53:38,179 - INFO - Completed: sql_upload
+2026-09-05 22:53:38,179 - WARNING - Failed scripts: get_fixtures, fantasy_gw_data
+2026-09-05 22:53:38,336 - INFO - Found 9 fixtures in next 7 days
+2026-09-05 22:53:38,336 - INFO - 
+2026-09-05 22:53:38,336 - INFO - Fixture: None vs None
+2026-09-05 22:53:38,336 - INFO - Kick-off: 2026-09-06 13:00:00
+2026-09-05 22:53:38,336 - INFO - Gameday tasks will run at: 2026-09-06 16:00:00
+2026-09-05 22:53:38,337 - INFO - Next gameday tasks scheduled for: 2026-09-06 16:00:00
+2026-09-05 22:53:38,337 - INFO - Waiting 1026.4 minutes...
+2026-09-05 22:59:08,988 - INFO - FPL Pipeline Orchestrator Started
+2026-09-05 22:59:08,988 - INFO - Season: 2627
+2026-09-05 22:59:08,988 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-05 22:59:09,055 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-05 22:59:09,055 - INFO - ============================================================
+2026-09-05 22:59:09,055 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-05 22:59:09,055 - INFO - ============================================================
+2026-09-05 22:59:09,122 - INFO - Waiting 25s before simulating Enter for gameweek_pull...
+2026-09-05 22:59:09,122 - INFO - Starting: gameweek_pull
+2026-09-05 22:59:34,123 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-05 22:59:34,224 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-05 23:04:01,656 - INFO - FPL Pipeline Orchestrator Started
+2026-09-05 23:04:01,656 - INFO - Season: 2627
+2026-09-05 23:04:01,657 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-05 23:04:01,663 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-05 23:04:01,664 - INFO - ============================================================
+2026-09-05 23:04:01,664 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-05 23:04:01,664 - INFO - ============================================================
+2026-09-05 23:04:01,665 - INFO - Waiting 25s before simulating Enter for gameweek_pull...
+2026-09-05 23:04:01,665 - INFO - Starting: gameweek_pull
+2026-09-05 23:04:26,665 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-05 23:04:26,766 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-05 23:13:07,665 - INFO - FPL Pipeline Orchestrator Started
+2026-09-05 23:13:07,666 - INFO - Season: 2627
+2026-09-05 23:13:07,666 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-05 23:13:07,673 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-05 23:13:07,673 - INFO - ============================================================
+2026-09-05 23:13:07,673 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-05 23:13:07,673 - INFO - ============================================================
+2026-09-05 23:13:07,673 - INFO - Waiting 25s before simulating Enter for gameweek_pull...
+2026-09-05 23:13:07,674 - INFO - Starting: gameweek_pull
+2026-09-05 23:13:32,674 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-05 23:13:32,776 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-05 23:13:33,009 - INFO - Completed: gameweek_pull
+2026-09-05 23:13:33,009 - INFO - Waiting 20s before next task...
+2026-09-05 23:13:53,010 - INFO - Starting: fpl_player_pull
+2026-09-05 23:13:53,945 - INFO - Completed: fpl_player_pull
+2026-09-05 23:13:53,946 - INFO - Waiting 20s before next task...
+2026-09-05 23:14:13,946 - WARNING - Script not found: C:\Users\JesseOnu\fpl sql rework\files to runn\get_fixtures.py
+2026-09-05 23:14:13,947 - INFO - Starting: fantasy_gw_data
+2026-09-05 23:14:14,798 - INFO - Completed: fantasy_gw_data
+2026-09-05 23:14:14,798 - INFO - Waiting 20s before next task...
+2026-09-05 23:14:34,799 - INFO - Starting: sql_upload
+2026-09-05 23:14:46,399 - INFO - Completed: sql_upload
+2026-09-05 23:14:46,400 - WARNING - Failed scripts: get_fixtures
+2026-09-05 23:14:46,640 - INFO - Found 9 fixtures in next 7 days
+2026-09-05 23:14:46,641 - INFO - 
+2026-09-05 23:14:46,641 - INFO - Fixture: None vs None
+2026-09-05 23:14:46,641 - INFO - Kick-off: 2026-09-06 13:00:00
+2026-09-05 23:14:46,642 - INFO - Gameday tasks will run at: 2026-09-06 16:00:00
+2026-09-05 23:14:46,642 - INFO - Next gameday tasks scheduled for: 2026-09-06 16:00:00
+2026-09-05 23:14:46,642 - INFO - Waiting 1005.2 minutes...
+2026-09-05 23:17:01,036 - INFO - FPL Pipeline Orchestrator Started
+2026-09-05 23:17:01,037 - INFO - Season: 2627
+2026-09-05 23:17:01,037 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-05 23:17:01,044 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-05 23:17:01,044 - INFO - ============================================================
+2026-09-05 23:17:01,044 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-05 23:17:01,044 - INFO - ============================================================
+2026-09-05 23:17:01,046 - INFO - Waiting 25s before simulating Enter for gameweek_pull...
+2026-09-05 23:17:01,046 - INFO - Starting: gameweek_pull
+2026-09-05 23:17:26,047 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-05 23:17:26,148 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-05 23:17:26,236 - INFO - Completed: gameweek_pull
+2026-09-05 23:17:26,236 - INFO - Waiting 20s before next task...
+2026-09-05 23:17:46,237 - INFO - Starting: fpl_player_pull
+2026-09-05 23:17:47,044 - INFO - Completed: fpl_player_pull
+2026-09-05 23:17:47,044 - INFO - Waiting 20s before next task...
+2026-09-05 23:18:07,044 - INFO - Starting: get_fixtures
+2026-09-05 23:18:07,859 - INFO - Completed: get_fixtures
+2026-09-05 23:18:07,859 - INFO - Waiting 20s before next task...
+2026-09-05 23:18:27,860 - INFO - Starting: fantasy_gw_data
+2026-09-05 23:18:28,670 - INFO - Completed: fantasy_gw_data
+2026-09-05 23:18:28,671 - INFO - Waiting 20s before next task...
+2026-09-05 23:18:48,671 - INFO - Starting: sql_upload
+2026-09-05 23:18:56,813 - INFO - Completed: sql_upload
+2026-09-05 23:18:56,814 - INFO - All daily tasks completed successfully
+2026-09-05 23:18:56,988 - INFO - Found 9 fixtures in next 7 days
+2026-09-05 23:18:56,988 - INFO - 
+2026-09-05 23:18:56,988 - INFO - Fixture: None vs None
+2026-09-05 23:18:56,988 - INFO - Kick-off: 2026-09-06 13:00:00
+2026-09-05 23:18:56,988 - INFO - Gameday tasks will run at: 2026-09-06 16:00:00
+2026-09-05 23:18:56,989 - INFO - Next gameday tasks scheduled for: 2026-09-06 16:00:00
+2026-09-05 23:18:56,989 - INFO - Waiting 1001.1 minutes...
+2026-09-06 16:00:01,718 - INFO - ============================================================
+2026-09-06 16:00:01,788 - INFO - RUNNING GAMEDAY TASKS
+2026-09-06 16:00:01,788 - INFO - ============================================================
+2026-09-06 16:00:01,789 - INFO - Starting: get_fixtures
+2026-09-06 16:00:17,733 - INFO - Completed: get_fixtures
+2026-09-06 16:00:17,733 - INFO - Waiting 20s before next task...
+2026-09-06 16:00:37,734 - INFO - Starting: fantasy_gw_data
+2026-09-06 16:00:38,797 - INFO - Completed: fantasy_gw_data
+2026-09-06 16:00:38,797 - INFO - Waiting 20s before next task...
+2026-09-06 16:00:58,798 - INFO - Waiting 25s before simulating Enter for gameweek_pull...
+2026-09-06 16:00:58,798 - INFO - Starting: gameweek_pull
+2026-09-06 16:01:23,799 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-06 16:01:23,951 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-06 16:10:58,856 - ERROR - Timeout: gameweek_pull exceeded 10 minutes
+2026-09-06 16:10:58,857 - INFO - Waiting 20s before next task...
+2026-09-06 16:11:18,858 - INFO - Starting: player_scores
+2026-09-06 16:11:19,862 - INFO - Completed: player_scores
+2026-09-06 16:11:19,862 - INFO - Waiting 20s before next task...
+2026-09-06 16:11:39,879 - INFO - Starting: sql_upload
+2026-09-06 16:11:54,476 - INFO - Completed: sql_upload
+2026-09-06 16:11:54,476 - WARNING - Failed scripts: gameweek_pull
+2026-09-06 16:11:54,477 - INFO - Completed gameday tasks for None vs None
+2026-09-06 16:11:54,477 - INFO - 
+2026-09-06 16:11:54,502 - INFO - 
+2026-09-06 16:11:54,503 - INFO - Fixture: None vs None
+2026-09-06 16:11:54,503 - INFO - Kick-off: 2026-09-06 15:30:00
+2026-09-06 16:11:54,503 - INFO - Gameday tasks will run at: 2026-09-06 18:30:00
+2026-09-06 16:11:54,537 - INFO - Next gameday tasks scheduled for: 2026-09-06 18:30:00
+2026-09-06 16:11:54,537 - INFO - Waiting 138.1 minutes...
+2026-09-06 16:14:03,764 - INFO - FPL Pipeline Orchestrator Started
+2026-09-06 16:14:03,764 - INFO - Season: 2627
+2026-09-06 16:14:03,764 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-06 16:14:03,772 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-06 16:14:03,772 - INFO - ============================================================
+2026-09-06 16:14:03,772 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-06 16:14:03,772 - INFO - ============================================================
+2026-09-06 16:14:03,773 - INFO - Waiting 25s before simulating Enter for gameweek_pull...
+2026-09-06 16:14:03,773 - INFO - Starting: gameweek_pull
+2026-09-06 16:14:28,773 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-06 16:14:28,874 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-06 16:14:28,934 - INFO - Completed: gameweek_pull
+2026-09-06 16:14:28,934 - INFO - Waiting 20s before next task...
+2026-09-06 16:14:48,955 - INFO - Starting: fpl_player_pull
+2026-09-06 16:14:49,819 - INFO - Completed: fpl_player_pull
+2026-09-06 16:14:49,819 - INFO - Waiting 20s before next task...
+2026-09-06 16:15:09,820 - INFO - Starting: get_fixtures
+2026-09-06 16:15:10,493 - INFO - Completed: get_fixtures
+2026-09-06 16:15:10,493 - INFO - Waiting 20s before next task...
+2026-09-06 16:15:30,494 - INFO - Starting: fantasy_gw_data
+2026-09-06 16:15:31,196 - INFO - Completed: fantasy_gw_data
+2026-09-06 16:15:31,196 - INFO - Waiting 20s before next task...
+2026-09-06 16:15:51,196 - INFO - Starting: sql_upload
+2026-09-06 16:15:59,610 - INFO - Completed: sql_upload
+2026-09-06 16:15:59,610 - INFO - All daily tasks completed successfully
+2026-09-06 16:15:59,897 - INFO - Found 9 fixtures in next 7 days
+2026-09-06 16:15:59,897 - INFO - 
+2026-09-06 16:15:59,897 - INFO - Fixture: None vs None
+2026-09-06 16:15:59,897 - INFO - Kick-off: 2026-09-12 14:00:00
+2026-09-06 16:15:59,897 - INFO - Gameday tasks will run at: 2026-09-12 17:00:00
+2026-09-06 16:15:59,897 - INFO - Next gameday tasks scheduled for: 2026-09-12 17:00:00
+2026-09-06 16:15:59,898 - INFO - Waiting 8684.0 minutes...
+2026-09-06 18:36:14,381 - INFO - FPL Pipeline Orchestrator Started
+2026-09-06 18:36:14,381 - INFO - Season: 2627
+2026-09-06 18:36:14,382 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-06 18:36:14,530 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-06 18:36:14,530 - INFO - ============================================================
+2026-09-06 18:36:14,530 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-06 18:36:14,531 - INFO - ============================================================
+2026-09-06 18:36:14,532 - INFO - Waiting 25s before simulating Enter for gameweek_pull...
+2026-09-06 18:36:14,532 - INFO - Starting: gameweek_pull
+2026-09-06 18:36:39,532 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-06 18:36:39,633 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-06 18:43:02,112 - INFO - FPL Pipeline Orchestrator Started
+2026-09-06 18:43:02,113 - INFO - Season: 2627
+2026-09-06 18:43:02,113 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-06 18:43:02,119 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-06 18:43:02,119 - INFO - ============================================================
+2026-09-06 18:43:02,120 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-06 18:43:02,120 - INFO - ============================================================
+2026-09-06 18:43:02,125 - INFO - Waiting 25s before simulating Enter for gameweek_pull...
+2026-09-06 18:43:02,125 - INFO - Starting: gameweek_pull
+2026-09-06 18:43:27,125 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-06 18:43:27,226 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-06 18:43:27,346 - INFO - Completed: gameweek_pull
+2026-09-06 18:43:27,346 - INFO - Waiting 45s before next task...
+2026-09-06 18:44:12,346 - INFO - Starting: fpl_player_pull
+2026-09-06 18:44:13,163 - INFO - Completed: fpl_player_pull
+2026-09-06 18:44:13,163 - INFO - Waiting 45s before next task...
+2026-09-06 18:44:58,163 - INFO - Starting: get_fixtures
+2026-09-06 18:44:59,048 - INFO - Completed: get_fixtures
+2026-09-06 18:44:59,048 - INFO - Waiting 45s before next task...
+2026-09-06 18:45:44,049 - INFO - Starting: fantasy_gw_data
+2026-09-06 18:45:44,860 - INFO - Completed: fantasy_gw_data
+2026-09-06 18:45:44,860 - INFO - Waiting 45s before next task...
+2026-09-06 18:46:29,861 - INFO - Starting: sql_upload
+2026-09-06 18:46:42,868 - INFO - Completed: sql_upload
+2026-09-06 18:46:42,868 - INFO - All daily tasks completed successfully
+2026-09-06 18:46:43,097 - INFO - Found 9 fixtures in next 7 days
+2026-09-06 18:46:43,098 - INFO - 
+2026-09-06 18:46:43,098 - INFO - Fixture: None vs None
+2026-09-06 18:46:43,098 - INFO - Kick-off: 2026-09-12 14:00:00
+2026-09-06 18:46:43,098 - INFO - Gameday tasks will run at: 2026-09-12 17:00:00
+2026-09-06 18:46:43,098 - INFO - Next gameday tasks scheduled for: 2026-09-12 17:00:00
+2026-09-06 18:46:43,098 - INFO - Waiting 8533.3 minutes...
+2026-09-07 00:30:02,602 - INFO - FPL Pipeline Orchestrator Started
+2026-09-07 00:30:02,603 - INFO - Season: 2627
+2026-09-07 00:30:02,603 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-07 00:30:02,609 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-07 00:30:02,609 - INFO - ============================================================
+2026-09-07 00:30:02,609 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-07 00:30:02,609 - INFO - ============================================================
+2026-09-07 00:30:02,628 - INFO - Waiting 25s before simulating Enter for gameweek_pull...
+2026-09-07 00:30:02,628 - INFO - Starting: gameweek_pull
+2026-09-07 00:30:27,628 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-07 00:30:27,729 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-07 00:30:27,788 - INFO - Completed: gameweek_pull
+2026-09-07 00:30:27,788 - INFO - Waiting 45s before next task...
+2026-09-07 00:31:12,789 - INFO - Starting: fpl_player_pull
+2026-09-07 00:31:13,485 - INFO - Completed: fpl_player_pull
+2026-09-07 00:31:13,485 - INFO - Waiting 45s before next task...
+2026-09-07 00:31:58,486 - INFO - Starting: get_fixtures
+2026-09-07 00:31:59,140 - INFO - Completed: get_fixtures
+2026-09-07 00:31:59,140 - INFO - Waiting 45s before next task...
+2026-09-07 00:32:44,140 - INFO - Starting: fantasy_gw_data
+2026-09-07 00:32:44,851 - INFO - Completed: fantasy_gw_data
+2026-09-07 00:32:44,851 - INFO - Waiting 45s before next task...
+2026-09-07 00:33:29,851 - INFO - Starting: sql_upload
+2026-09-07 00:33:37,649 - INFO - Completed: sql_upload
+2026-09-07 00:33:37,650 - INFO - All daily tasks completed successfully
+2026-09-07 00:33:37,805 - INFO - Found 9 fixtures in next 7 days
+2026-09-07 00:33:37,805 - INFO - 
+2026-09-07 00:33:37,805 - INFO - Fixture: None vs None
+2026-09-07 00:33:37,805 - INFO - Kick-off: 2026-09-12 14:00:00
+2026-09-07 00:33:37,806 - INFO - Gameday tasks will run at: 2026-09-12 17:00:00
+2026-09-07 00:33:37,806 - INFO - Next gameday tasks scheduled for: 2026-09-12 17:00:00
+2026-09-07 00:33:37,806 - INFO - Waiting 8186.4 minutes...
+2026-09-08 00:30:45,314 - INFO - FPL Pipeline Orchestrator Started
+2026-09-08 00:30:45,327 - INFO - Season: 2627
+2026-09-08 00:30:45,327 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-08 00:30:45,676 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-08 00:30:45,676 - INFO - ============================================================
+2026-09-08 00:30:45,676 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-08 00:30:45,676 - INFO - ============================================================
+2026-09-08 00:30:45,705 - INFO - Waiting 25s before simulating Enter for gameweek_pull...
+2026-09-08 00:30:45,706 - INFO - Starting: gameweek_pull
+2026-09-08 00:31:10,706 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-08 00:31:10,807 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-08 00:39:02,248 - INFO - FPL Pipeline Orchestrator Started
+2026-09-08 00:39:02,248 - INFO - Season: 2627
+2026-09-08 00:39:02,248 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-08 00:39:02,255 - INFO - Loaded fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-08 00:39:02,255 - INFO - ============================================================
+2026-09-08 00:39:02,255 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-08 00:39:02,255 - INFO - ============================================================
+2026-09-08 00:39:02,272 - INFO - Waiting 25s before simulating Enter for gameweek_pull...
+2026-09-08 00:39:02,272 - INFO - Starting: gameweek_pull
+2026-09-08 00:39:27,272 - INFO - Simulating Enter key press for gameweek_pull
+2026-09-08 00:39:27,373 - INFO - Enter key pressed successfully for gameweek_pull
+2026-09-08 00:49:02,301 - ERROR - Timeout: gameweek_pull exceeded 10 minutes
+2026-09-08 00:49:02,301 - INFO - Waiting 65s before next task...
+2026-09-08 00:50:07,319 - INFO - Starting: fpl_player_pull
+2026-09-08 00:50:08,338 - INFO - Completed: fpl_player_pull
+2026-09-08 00:50:08,338 - INFO - Waiting 65s before next task...
+2026-09-08 00:51:13,355 - INFO - Starting: get_fixtures
+2026-09-08 00:51:14,047 - INFO - Completed: get_fixtures
+2026-09-08 00:51:14,047 - INFO - Waiting 65s before next task...
+2026-09-08 00:52:02,325 - INFO - ======================================================================
+2026-09-08 00:52:02,325 - INFO - FPL PIPELINE ORCHESTRATOR STARTED
+2026-09-08 00:52:02,325 - INFO - ======================================================================
+2026-09-08 00:52:02,325 - INFO - Season: 2627
+2026-09-08 00:52:02,325 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-08 00:52:02,325 - INFO - Scripts directory: C:\Users\JesseOnu\fpl sql rework\files to runn
+2026-09-08 00:52:02,332 - INFO - Loaded 380 fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-08 00:52:02,336 - INFO - 
+2026-09-08 00:52:02,336 - INFO - PHASE 1: Running initial daily refresh
+2026-09-08 00:52:02,336 - INFO - ======================================================================
+2026-09-08 00:52:02,336 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-08 00:52:02,336 - INFO - ======================================================================
+2026-09-08 00:52:02,336 - INFO - [gameweek_pull] Starting execution
+2026-09-08 00:52:02,337 - INFO - [gameweek_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\gameweek_pull.py
+2026-09-08 00:52:02,337 - INFO - [gameweek_pull] Requires input: True
+2026-09-08 00:52:03,115 - INFO - [gameweek_pull] Completed successfully (0.8s)
+2026-09-08 00:52:03,116 - INFO - [gameweek_pull] Waiting 65s before next task...
+2026-09-08 00:53:08,116 - INFO - [fpl_player_pull] Starting execution
+2026-09-08 00:53:08,116 - INFO - [fpl_player_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fpl_player_pull-.py
+2026-09-08 00:53:08,117 - INFO - [fpl_player_pull] Requires input: False
+2026-09-08 00:53:08,816 - INFO - [fpl_player_pull] Completed successfully (0.7s)
+2026-09-08 00:53:08,817 - INFO - [fpl_player_pull] Waiting 65s before next task...
+2026-09-08 00:54:13,817 - INFO - [get_fixtures] Starting execution
+2026-09-08 00:54:13,818 - INFO - [get_fixtures] File: C:\Users\JesseOnu\fpl sql rework\files to runn\get_fixtues.py
+2026-09-08 00:54:13,818 - INFO - [get_fixtures] Requires input: False
+2026-09-08 00:54:14,493 - INFO - [get_fixtures] Completed successfully (0.7s)
+2026-09-08 00:54:14,493 - INFO - [get_fixtures] Waiting 65s before next task...
+2026-09-08 00:55:19,494 - INFO - [fantasy_gw_data] Starting execution
+2026-09-08 00:55:19,494 - INFO - [fantasy_gw_data] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fantasy_gw_data.py
+2026-09-08 00:55:19,494 - INFO - [fantasy_gw_data] Requires input: False
+2026-09-08 00:55:20,444 - INFO - [fantasy_gw_data] Completed successfully (1.0s)
+2026-09-08 00:55:20,445 - INFO - [fantasy_gw_data] Waiting 65s before next task...
+2026-09-08 00:56:25,445 - INFO - [sql_upload] Starting execution
+2026-09-08 00:56:25,445 - INFO - [sql_upload] File: C:\Users\JesseOnu\fpl sql rework\files to runn\sql_table_upload_script.py
+2026-09-08 00:56:25,445 - INFO - [sql_upload] Requires input: False
+2026-09-08 00:56:41,670 - INFO - [sql_upload] Completed successfully (16.2s)
+2026-09-08 00:56:41,670 - INFO - ======================================================================
+2026-09-08 00:56:41,670 - INFO - All daily tasks completed successfully
+2026-09-08 00:56:41,670 - INFO - 
+2026-09-08 00:56:41,670 - INFO - PHASE 2: Checking for upcoming fixtures
+2026-09-08 00:56:41,829 - INFO - Found 10 fixtures in next 7 days
+2026-09-08 00:56:41,829 - INFO - 
+2026-09-08 00:56:41,830 - INFO - PHASE 3.1: Processing fixture 1 of 10
+2026-09-08 00:56:41,830 - INFO -   Match: None vs None
+2026-09-08 00:56:41,830 - INFO -   Kickoff: 2026-09-12 14:00:00
+2026-09-08 00:56:41,830 - INFO -   Gameday tasks scheduled for: 2026-09-12 17:00:00
+2026-09-08 00:56:41,830 - INFO - Next gameday run scheduled for: 2026-09-12 17:00:00
+2026-09-08 00:56:41,830 - INFO - Sleeping for 6723.3 minutes...
+2026-09-08 01:01:01,856 - INFO - ======================================================================
+2026-09-08 01:01:01,856 - INFO - FPL PIPELINE ORCHESTRATOR STARTED
+2026-09-08 01:01:01,856 - INFO - ======================================================================
+2026-09-08 01:01:01,856 - INFO - Season: 2627
+2026-09-08 01:01:01,856 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-08 01:01:01,856 - INFO - Scripts directory: C:\Users\JesseOnu\fpl sql rework\files to runn
+2026-09-08 01:01:01,862 - INFO - Loaded 380 fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-08 01:01:01,862 - INFO - 
+2026-09-08 01:01:01,863 - INFO - PHASE 1: Running initial daily refresh
+2026-09-08 01:01:01,863 - INFO - ======================================================================
+2026-09-08 01:01:01,863 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-08 01:01:01,863 - INFO - ======================================================================
+2026-09-08 01:01:01,863 - INFO - [gameweek_pull] Starting execution
+2026-09-08 01:01:01,863 - INFO - [gameweek_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\gameweek_pull.py
+2026-09-08 01:01:01,863 - INFO - [gameweek_pull] Requires input: True
+2026-09-08 01:01:02,647 - INFO - [gameweek_pull] Completed successfully (0.8s)
+2026-09-08 01:01:02,647 - INFO - [gameweek_pull] Waiting 65s before next task...
+2026-09-08 01:02:07,647 - INFO - [fpl_player_pull] Starting execution
+2026-09-08 01:02:07,648 - INFO - [fpl_player_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fpl_player_pull-.py
+2026-09-08 01:02:07,648 - INFO - [fpl_player_pull] Requires input: False
+2026-09-08 01:02:08,380 - INFO - [fpl_player_pull] Completed successfully (0.7s)
+2026-09-08 01:02:08,380 - INFO - [fpl_player_pull] Waiting 65s before next task...
+2026-09-08 01:03:13,381 - INFO - [get_fixtures] Starting execution
+2026-09-08 01:03:13,381 - INFO - [get_fixtures] File: C:\Users\JesseOnu\fpl sql rework\files to runn\get_fixtues.py
+2026-09-08 01:03:13,381 - INFO - [get_fixtures] Requires input: False
+2026-09-08 01:03:14,067 - INFO - [get_fixtures] Completed successfully (0.7s)
+2026-09-08 01:03:14,068 - INFO - [get_fixtures] Waiting 65s before next task...
+2026-09-08 01:04:19,068 - INFO - [fantasy_gw_data] Starting execution
+2026-09-08 01:04:19,068 - INFO - [fantasy_gw_data] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fantasy_gw_data.py
+2026-09-08 01:04:19,069 - INFO - [fantasy_gw_data] Requires input: False
+2026-09-08 01:04:19,760 - INFO - [fantasy_gw_data] Completed successfully (0.7s)
+2026-09-08 01:04:19,760 - INFO - [fantasy_gw_data] Waiting 65s before next task...
+2026-09-08 01:05:24,760 - INFO - [sql_upload] Starting execution
+2026-09-08 01:05:24,761 - INFO - [sql_upload] File: C:\Users\JesseOnu\fpl sql rework\files to runn\sql_table_upload_script.py
+2026-09-08 01:05:24,761 - INFO - [sql_upload] Requires input: False
+2026-09-08 01:05:38,252 - INFO - [sql_upload] Completed successfully (13.5s)
+2026-09-08 01:05:38,252 - INFO - [sql_upload] Waiting 65s before next task...
+2026-09-08 01:06:43,252 - INFO - [player_scores] Starting execution
+2026-09-08 01:06:43,252 - INFO - [player_scores] File: C:\Users\JesseOnu\fpl sql rework\files to runn\player_scores.py
+2026-09-08 01:06:43,253 - INFO - [player_scores] Requires input: False
+2026-09-08 01:06:43,943 - INFO - [player_scores] Completed successfully (0.7s)
+2026-09-08 01:06:43,943 - INFO - ======================================================================
+2026-09-08 01:06:43,943 - INFO - All daily tasks completed successfully
+2026-09-08 01:06:43,944 - INFO - 
+2026-09-08 01:06:43,944 - INFO - PHASE 2: Checking for upcoming fixtures
+2026-09-08 01:06:44,105 - INFO - Found 10 fixtures in next 7 days
+2026-09-08 01:06:44,105 - INFO - 
+2026-09-08 01:06:44,105 - INFO - PHASE 3.1: Processing fixture 1 of 10
+2026-09-08 01:06:44,105 - INFO -   Match: None vs None
+2026-09-08 01:06:44,106 - INFO -   Kickoff: 2026-09-12 14:00:00
+2026-09-08 01:06:44,106 - INFO -   Gameday tasks scheduled for: 2026-09-12 17:00:00
+2026-09-08 01:06:44,106 - INFO - Next gameday run scheduled for: 2026-09-12 17:00:00
+2026-09-08 01:06:44,106 - INFO - Sleeping for 6713.3 minutes...
+2026-09-08 01:09:02,079 - INFO - ======================================================================
+2026-09-08 01:09:02,079 - INFO - FPL PIPELINE ORCHESTRATOR STARTED
+2026-09-08 01:09:02,079 - INFO - ======================================================================
+2026-09-08 01:09:02,079 - INFO - Season: 2627
+2026-09-08 01:09:02,080 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-08 01:09:02,080 - INFO - Scripts directory: C:\Users\JesseOnu\fpl sql rework\files to runn
+2026-09-08 01:09:02,086 - INFO - Loaded 380 fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-08 01:09:02,086 - INFO - 
+2026-09-08 01:09:02,086 - INFO - PHASE 1: Running initial daily refresh
+2026-09-08 01:09:02,087 - INFO - ======================================================================
+2026-09-08 01:09:02,087 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-08 01:09:02,087 - INFO - ======================================================================
+2026-09-08 01:09:02,087 - INFO - [gameweek_pull] Starting execution
+2026-09-08 01:09:02,087 - INFO - [gameweek_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\gameweek_pull.py
+2026-09-08 01:09:02,087 - INFO - [gameweek_pull] Requires input: True
+2026-09-08 01:09:02,939 - INFO - [gameweek_pull] Completed successfully (0.9s)
+2026-09-08 01:09:02,939 - INFO - [gameweek_pull] Waiting 30s before next task...
+2026-09-08 01:09:32,940 - INFO - [fpl_player_pull] Starting execution
+2026-09-08 01:09:32,940 - INFO - [fpl_player_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fpl_player_pull-.py
+2026-09-08 01:09:32,940 - INFO - [fpl_player_pull] Requires input: False
+2026-09-08 01:09:33,730 - INFO - [fpl_player_pull] Completed successfully (0.8s)
+2026-09-08 01:09:33,730 - INFO - [fpl_player_pull] Waiting 30s before next task...
+2026-09-08 01:10:03,731 - INFO - [get_fixtures] Starting execution
+2026-09-08 01:10:03,731 - INFO - [get_fixtures] File: C:\Users\JesseOnu\fpl sql rework\files to runn\get_fixtues.py
+2026-09-08 01:10:03,731 - INFO - [get_fixtures] Requires input: False
+2026-09-08 01:10:04,464 - INFO - [get_fixtures] Completed successfully (0.7s)
+2026-09-08 01:10:04,464 - INFO - [get_fixtures] Waiting 30s before next task...
+2026-09-08 01:10:34,465 - INFO - [fantasy_gw_data] Starting execution
+2026-09-08 01:10:34,465 - INFO - [fantasy_gw_data] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fantasy_gw_data.py
+2026-09-08 01:10:34,465 - INFO - [fantasy_gw_data] Requires input: False
+2026-09-08 01:10:35,179 - INFO - [fantasy_gw_data] Completed successfully (0.7s)
+2026-09-08 01:10:35,179 - INFO - [fantasy_gw_data] Waiting 30s before next task...
+2026-09-08 01:11:05,179 - INFO - [player_scores] Starting execution
+2026-09-08 01:11:05,180 - INFO - [player_scores] File: C:\Users\JesseOnu\fpl sql rework\files to runn\player_scores.py
+2026-09-08 01:11:05,180 - INFO - [player_scores] Requires input: False
+2026-09-08 01:11:05,827 - INFO - [player_scores] Completed successfully (0.6s)
+2026-09-08 01:11:05,827 - INFO - [player_scores] Waiting 30s before next task...
+2026-09-08 01:11:35,828 - INFO - [sql_upload] Starting execution
+2026-09-08 01:11:35,828 - INFO - [sql_upload] File: C:\Users\JesseOnu\fpl sql rework\files to runn\sql_table_upload_script.py
+2026-09-08 01:11:35,829 - INFO - [sql_upload] Requires input: False
+2026-09-08 01:11:45,094 - INFO - [sql_upload] Completed successfully (9.3s)
+2026-09-08 01:11:45,094 - INFO - ======================================================================
+2026-09-08 01:11:45,094 - INFO - All daily tasks completed successfully
+2026-09-08 01:11:45,094 - INFO - 
+2026-09-08 01:11:45,094 - INFO - PHASE 2: Checking for upcoming fixtures
+2026-09-08 01:11:45,260 - INFO - Found 10 fixtures in next 7 days
+2026-09-08 01:11:45,260 - INFO - 
+2026-09-08 01:11:45,260 - INFO - PHASE 3.1: Processing fixture 1 of 10
+2026-09-08 01:11:45,260 - INFO -   Match: None vs None
+2026-09-08 01:11:45,260 - INFO -   Kickoff: 2026-09-12 14:00:00
+2026-09-08 01:11:45,260 - INFO -   Gameday tasks scheduled for: 2026-09-12 17:00:00
+2026-09-08 01:11:45,260 - INFO - Next gameday run scheduled for: 2026-09-12 17:00:00
+2026-09-08 01:11:45,260 - INFO - Sleeping for 6708.2 minutes...
+2026-09-09 00:30:40,427 - INFO - ======================================================================
+2026-09-09 00:30:40,440 - INFO - FPL PIPELINE ORCHESTRATOR STARTED
+2026-09-09 00:30:40,440 - INFO - ======================================================================
+2026-09-09 00:30:40,440 - INFO - Season: 2627
+2026-09-09 00:30:40,440 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-09 00:30:40,440 - INFO - Scripts directory: C:\Users\JesseOnu\fpl sql rework\files to runn
+2026-09-09 00:30:40,623 - INFO - Loaded 380 fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-09 00:30:40,624 - INFO - 
+2026-09-09 00:30:40,624 - INFO - PHASE 1: Running initial daily refresh
+2026-09-09 00:30:40,624 - INFO - ======================================================================
+2026-09-09 00:30:40,624 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-09 00:30:40,624 - INFO - ======================================================================
+2026-09-09 00:30:40,634 - INFO - [gameweek_pull] Starting execution
+2026-09-09 00:30:40,634 - INFO - [gameweek_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\gameweek_pull.py
+2026-09-09 00:30:40,634 - INFO - [gameweek_pull] Requires input: True
+2026-09-09 00:30:45,024 - INFO - [gameweek_pull] Completed successfully (4.4s)
+2026-09-09 00:30:45,024 - INFO - [gameweek_pull] Waiting 30s before next task...
+2026-09-09 00:31:15,025 - INFO - [fpl_player_pull] Starting execution
+2026-09-09 00:31:15,025 - INFO - [fpl_player_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fpl_player_pull-.py
+2026-09-09 00:31:15,025 - INFO - [fpl_player_pull] Requires input: False
+2026-09-09 00:31:15,816 - INFO - [fpl_player_pull] Completed successfully (0.8s)
+2026-09-09 00:31:15,816 - INFO - [fpl_player_pull] Waiting 30s before next task...
+2026-09-09 00:31:45,835 - INFO - [get_fixtures] Starting execution
+2026-09-09 00:31:45,835 - INFO - [get_fixtures] File: C:\Users\JesseOnu\fpl sql rework\files to runn\get_fixtues.py
+2026-09-09 00:31:45,835 - INFO - [get_fixtures] Requires input: False
+2026-09-09 00:31:46,464 - INFO - [get_fixtures] Completed successfully (0.6s)
+2026-09-09 00:31:46,464 - INFO - [get_fixtures] Waiting 30s before next task...
+2026-09-09 00:32:16,464 - INFO - [fantasy_gw_data] Starting execution
+2026-09-09 00:32:16,465 - INFO - [fantasy_gw_data] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fantasy_gw_data.py
+2026-09-09 00:32:16,465 - INFO - [fantasy_gw_data] Requires input: False
+2026-09-09 00:32:17,191 - INFO - [fantasy_gw_data] Completed successfully (0.7s)
+2026-09-09 00:32:17,191 - INFO - [fantasy_gw_data] Waiting 30s before next task...
+2026-09-09 00:32:47,207 - INFO - [player_scores] Starting execution
+2026-09-09 00:32:47,207 - INFO - [player_scores] File: C:\Users\JesseOnu\fpl sql rework\files to runn\player_scores.py
+2026-09-09 00:32:47,207 - INFO - [player_scores] Requires input: False
+2026-09-09 00:32:48,011 - INFO - [player_scores] Completed successfully (0.8s)
+2026-09-09 00:32:48,011 - INFO - [player_scores] Waiting 30s before next task...
+2026-09-09 00:33:18,012 - INFO - [sql_upload] Starting execution
+2026-09-09 00:33:18,012 - INFO - [sql_upload] File: C:\Users\JesseOnu\fpl sql rework\files to runn\sql_table_upload_script.py
+2026-09-09 00:33:18,012 - INFO - [sql_upload] Requires input: False
+2026-09-09 00:33:33,244 - INFO - [sql_upload] Completed successfully (15.2s)
+2026-09-09 00:33:33,244 - INFO - ======================================================================
+2026-09-09 00:33:33,244 - INFO - All daily tasks completed successfully
+2026-09-09 00:33:33,244 - INFO - 
+2026-09-09 00:33:33,245 - INFO - PHASE 2: Checking for upcoming fixtures
+2026-09-09 00:33:33,424 - INFO - Found 10 fixtures in next 7 days
+2026-09-09 00:33:33,425 - INFO - 
+2026-09-09 00:33:33,425 - INFO - PHASE 3.1: Processing fixture 1 of 10
+2026-09-09 00:33:33,425 - INFO -   Match: None vs None
+2026-09-09 00:33:33,425 - INFO -   Kickoff: 2026-09-12 14:00:00
+2026-09-09 00:33:33,425 - INFO -   Gameday tasks scheduled for: 2026-09-12 17:00:00
+2026-09-09 00:33:33,425 - INFO - Next gameday run scheduled for: 2026-09-12 17:00:00
+2026-09-09 00:33:33,425 - INFO - Sleeping for 5306.4 minutes...
+2026-09-10 00:30:29,841 - INFO - ======================================================================
+2026-09-10 00:30:29,851 - INFO - FPL PIPELINE ORCHESTRATOR STARTED
+2026-09-10 00:30:29,851 - INFO - ======================================================================
+2026-09-10 00:30:29,851 - INFO - Season: 2627
+2026-09-10 00:30:29,851 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-10 00:30:29,851 - INFO - Scripts directory: C:\Users\JesseOnu\fpl sql rework\files to runn
+2026-09-10 00:30:30,202 - INFO - Loaded 380 fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-10 00:30:30,202 - INFO - 
+2026-09-10 00:30:30,202 - INFO - PHASE 1: Running initial daily refresh
+2026-09-10 00:30:30,202 - INFO - ======================================================================
+2026-09-10 00:30:30,202 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-10 00:30:30,202 - INFO - ======================================================================
+2026-09-10 00:30:30,210 - INFO - [gameweek_pull] Starting execution
+2026-09-10 00:30:30,210 - INFO - [gameweek_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\gameweek_pull.py
+2026-09-10 00:30:30,210 - INFO - [gameweek_pull] Requires input: True
+2026-09-10 00:30:35,281 - INFO - [gameweek_pull] Completed successfully (5.1s)
+2026-09-10 00:30:35,281 - INFO - [gameweek_pull] Waiting 30s before next task...
+2026-09-10 00:31:05,281 - INFO - [fpl_player_pull] Starting execution
+2026-09-10 00:31:05,281 - INFO - [fpl_player_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fpl_player_pull-.py
+2026-09-10 00:31:05,281 - INFO - [fpl_player_pull] Requires input: False
+2026-09-10 00:31:06,116 - INFO - [fpl_player_pull] Completed successfully (0.8s)
+2026-09-10 00:31:06,116 - INFO - [fpl_player_pull] Waiting 30s before next task...
+2026-09-10 00:31:36,129 - INFO - [get_fixtures] Starting execution
+2026-09-10 00:31:36,129 - INFO - [get_fixtures] File: C:\Users\JesseOnu\fpl sql rework\files to runn\get_fixtues.py
+2026-09-10 00:31:36,129 - INFO - [get_fixtures] Requires input: False
+2026-09-10 00:31:36,845 - INFO - [get_fixtures] Completed successfully (0.7s)
+2026-09-10 00:31:36,845 - INFO - [get_fixtures] Waiting 30s before next task...
+2026-09-10 00:32:06,846 - INFO - [fantasy_gw_data] Starting execution
+2026-09-10 00:32:06,846 - INFO - [fantasy_gw_data] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fantasy_gw_data.py
+2026-09-10 00:32:06,846 - INFO - [fantasy_gw_data] Requires input: False
+2026-09-10 00:32:07,653 - INFO - [fantasy_gw_data] Completed successfully (0.8s)
+2026-09-10 00:32:07,653 - INFO - [fantasy_gw_data] Waiting 30s before next task...
+2026-09-10 00:32:37,685 - INFO - [player_scores] Starting execution
+2026-09-10 00:32:37,685 - INFO - [player_scores] File: C:\Users\JesseOnu\fpl sql rework\files to runn\player_scores.py
+2026-09-10 00:32:37,685 - INFO - [player_scores] Requires input: False
+2026-09-10 00:32:38,484 - INFO - [player_scores] Completed successfully (0.8s)
+2026-09-10 00:32:38,484 - INFO - [player_scores] Waiting 30s before next task...
+2026-09-10 00:33:08,485 - INFO - [sql_upload] Starting execution
+2026-09-10 00:33:08,485 - INFO - [sql_upload] File: C:\Users\JesseOnu\fpl sql rework\files to runn\sql_table_upload_script.py
+2026-09-10 00:33:08,485 - INFO - [sql_upload] Requires input: False
+2026-09-10 00:33:25,169 - INFO - [sql_upload] Completed successfully (16.7s)
+2026-09-10 00:33:25,169 - INFO - ======================================================================
+2026-09-10 00:33:25,169 - INFO - All daily tasks completed successfully
+2026-09-10 00:33:25,169 - INFO - 
+2026-09-10 00:33:25,169 - INFO - PHASE 2: Checking for upcoming fixtures
+2026-09-10 00:33:25,347 - INFO - Found 10 fixtures in next 7 days
+2026-09-10 00:33:25,347 - INFO - 
+2026-09-10 00:33:25,347 - INFO - PHASE 3.1: Processing fixture 1 of 10
+2026-09-10 00:33:25,347 - INFO -   Match: None vs None
+2026-09-10 00:33:25,347 - INFO -   Kickoff: 2026-09-12 14:00:00
+2026-09-10 00:33:25,347 - INFO -   Gameday tasks scheduled for: 2026-09-12 17:00:00
+2026-09-10 00:33:25,348 - INFO - Next gameday run scheduled for: 2026-09-12 17:00:00
+2026-09-10 00:33:25,348 - INFO - Sleeping for 3866.6 minutes...
+2026-09-11 00:35:19,200 - INFO - ======================================================================
+2026-09-11 00:35:19,207 - INFO - FPL PIPELINE ORCHESTRATOR STARTED
+2026-09-11 00:35:19,207 - INFO - ======================================================================
+2026-09-11 00:35:19,207 - INFO - Season: 2627
+2026-09-11 00:35:19,207 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-11 00:35:19,207 - INFO - Scripts directory: C:\Users\JesseOnu\fpl sql rework\files to runn
+2026-09-11 00:35:19,318 - INFO - Loaded 380 fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-11 00:35:19,319 - INFO - 
+2026-09-11 00:35:19,319 - INFO - PHASE 1: Running initial daily refresh
+2026-09-11 00:35:19,319 - INFO - ======================================================================
+2026-09-11 00:35:19,319 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-11 00:35:19,319 - INFO - ======================================================================
+2026-09-11 00:35:19,329 - INFO - [gameweek_pull] Starting execution
+2026-09-11 00:35:19,329 - INFO - [gameweek_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\gameweek_pull.py
+2026-09-11 00:35:19,329 - INFO - [gameweek_pull] Requires input: True
+2026-09-11 00:37:07,996 - INFO - [gameweek_pull] Completed successfully (108.7s)
+2026-09-11 00:37:07,996 - INFO - [gameweek_pull] Waiting 30s before next task...
+2026-09-11 00:37:37,996 - INFO - [fpl_player_pull] Starting execution
+2026-09-11 00:37:37,997 - INFO - [fpl_player_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fpl_player_pull-.py
+2026-09-11 00:37:37,997 - INFO - [fpl_player_pull] Requires input: False
+2026-09-11 00:37:41,576 - INFO - [fpl_player_pull] Completed successfully (3.6s)
+2026-09-11 00:37:41,576 - INFO - [fpl_player_pull] Waiting 30s before next task...
+2026-09-11 00:38:11,577 - INFO - [get_fixtures] Starting execution
+2026-09-11 00:38:11,577 - INFO - [get_fixtures] File: C:\Users\JesseOnu\fpl sql rework\files to runn\get_fixtues.py
+2026-09-11 00:38:11,577 - INFO - [get_fixtures] Requires input: False
+2026-09-11 00:38:12,453 - INFO - [get_fixtures] Completed successfully (0.9s)
+2026-09-11 00:38:12,453 - INFO - [get_fixtures] Waiting 30s before next task...
+2026-09-11 00:38:42,453 - INFO - [fantasy_gw_data] Starting execution
+2026-09-11 00:38:42,454 - INFO - [fantasy_gw_data] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fantasy_gw_data.py
+2026-09-11 00:38:42,454 - INFO - [fantasy_gw_data] Requires input: False
+2026-09-11 00:38:44,912 - INFO - [fantasy_gw_data] Completed successfully (2.5s)
+2026-09-11 00:38:44,913 - INFO - [fantasy_gw_data] Waiting 30s before next task...
+2026-09-11 00:39:14,913 - INFO - [player_scores] Starting execution
+2026-09-11 00:39:14,913 - INFO - [player_scores] File: C:\Users\JesseOnu\fpl sql rework\files to runn\player_scores.py
+2026-09-11 00:39:14,913 - INFO - [player_scores] Requires input: False
+2026-09-11 00:39:19,148 - INFO - [player_scores] Completed successfully (4.2s)
+2026-09-11 00:39:19,148 - INFO - [player_scores] Waiting 30s before next task...
+2026-09-11 00:39:49,149 - INFO - [sql_upload] Starting execution
+2026-09-11 00:39:49,149 - INFO - [sql_upload] File: C:\Users\JesseOnu\fpl sql rework\files to runn\sql_table_upload_script.py
+2026-09-11 00:39:49,149 - INFO - [sql_upload] Requires input: False
+2026-09-11 00:42:17,285 - INFO - [sql_upload] Completed successfully (148.1s)
+2026-09-11 00:42:17,286 - INFO - ======================================================================
+2026-09-11 00:42:17,286 - INFO - All daily tasks completed successfully
+2026-09-11 00:42:17,286 - INFO - 
+2026-09-11 00:42:17,286 - INFO - PHASE 2: Checking for upcoming fixtures
+2026-09-11 00:42:19,558 - INFO - Found 10 fixtures in next 7 days
+2026-09-11 00:42:19,558 - INFO - 
+2026-09-11 00:42:19,558 - INFO - PHASE 3.1: Processing fixture 1 of 10
+2026-09-11 00:42:19,559 - INFO -   Match: None vs None
+2026-09-11 00:42:19,559 - INFO -   Kickoff: 2026-09-12 14:00:00
+2026-09-11 00:42:19,559 - INFO -   Gameday tasks scheduled for: 2026-09-12 17:00:00
+2026-09-11 00:42:19,559 - INFO - Next gameday run scheduled for: 2026-09-12 17:00:00
+2026-09-11 00:42:19,559 - INFO - Sleeping for 2417.7 minutes...
+2026-09-12 00:30:09,478 - INFO - ======================================================================
+2026-09-12 00:30:09,489 - INFO - FPL PIPELINE ORCHESTRATOR STARTED
+2026-09-12 00:30:09,490 - INFO - ======================================================================
+2026-09-12 00:30:09,490 - INFO - Season: 2627
+2026-09-12 00:30:09,490 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-12 00:30:09,490 - INFO - Scripts directory: C:\Users\JesseOnu\fpl sql rework\files to runn
+2026-09-12 00:30:09,555 - INFO - Loaded 380 fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-12 00:30:09,555 - INFO - 
+2026-09-12 00:30:09,556 - INFO - PHASE 1: Running initial daily refresh
+2026-09-12 00:30:09,556 - INFO - ======================================================================
+2026-09-12 00:30:09,556 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-12 00:30:09,556 - INFO - ======================================================================
+2026-09-12 00:30:09,556 - INFO - [gameweek_pull] Starting execution
+2026-09-12 00:30:09,556 - INFO - [gameweek_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\gameweek_pull.py
+2026-09-12 00:30:09,556 - INFO - [gameweek_pull] Requires input: True
+2026-09-12 00:30:13,301 - INFO - [gameweek_pull] Completed successfully (3.7s)
+2026-09-12 00:30:13,301 - INFO - [gameweek_pull] Waiting 30s before next task...
+2026-09-12 00:30:43,302 - INFO - [fpl_player_pull] Starting execution
+2026-09-12 00:30:43,302 - INFO - [fpl_player_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fpl_player_pull-.py
+2026-09-12 00:30:43,302 - INFO - [fpl_player_pull] Requires input: False
+2026-09-12 00:30:44,164 - INFO - [fpl_player_pull] Completed successfully (0.9s)
+2026-09-12 00:30:44,164 - INFO - [fpl_player_pull] Waiting 30s before next task...
+2026-09-12 00:31:14,164 - INFO - [get_fixtures] Starting execution
+2026-09-12 00:31:14,164 - INFO - [get_fixtures] File: C:\Users\JesseOnu\fpl sql rework\files to runn\get_fixtues.py
+2026-09-12 00:31:14,164 - INFO - [get_fixtures] Requires input: False
+2026-09-12 00:31:15,107 - INFO - [get_fixtures] Completed successfully (0.9s)
+2026-09-12 00:31:15,108 - INFO - [get_fixtures] Waiting 30s before next task...
+2026-09-12 00:31:45,108 - INFO - [fantasy_gw_data] Starting execution
+2026-09-12 00:31:45,108 - INFO - [fantasy_gw_data] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fantasy_gw_data.py
+2026-09-12 00:31:45,108 - INFO - [fantasy_gw_data] Requires input: False
+2026-09-12 00:31:46,054 - INFO - [fantasy_gw_data] Completed successfully (0.9s)
+2026-09-12 00:31:46,054 - INFO - [fantasy_gw_data] Waiting 30s before next task...
+2026-09-12 00:32:16,054 - INFO - [player_scores] Starting execution
+2026-09-12 00:32:16,055 - INFO - [player_scores] File: C:\Users\JesseOnu\fpl sql rework\files to runn\player_scores.py
+2026-09-12 00:32:16,055 - INFO - [player_scores] Requires input: False
+2026-09-12 00:32:16,875 - INFO - [player_scores] Completed successfully (0.8s)
+2026-09-12 00:32:16,875 - INFO - [player_scores] Waiting 30s before next task...
+2026-09-12 00:32:46,876 - INFO - [sql_upload] Starting execution
+2026-09-12 00:32:46,876 - INFO - [sql_upload] File: C:\Users\JesseOnu\fpl sql rework\files to runn\sql_table_upload_script.py
+2026-09-12 00:32:46,876 - INFO - [sql_upload] Requires input: False
+2026-09-12 00:32:59,509 - INFO - [sql_upload] Completed successfully (12.6s)
+2026-09-12 00:32:59,509 - INFO - ======================================================================
+2026-09-12 00:32:59,509 - INFO - All daily tasks completed successfully
+2026-09-12 00:32:59,509 - INFO - 
+2026-09-12 00:32:59,509 - INFO - PHASE 2: Checking for upcoming fixtures
+2026-09-12 00:32:59,727 - INFO - Found 11 fixtures in next 7 days
+2026-09-12 00:32:59,727 - INFO - 
+2026-09-12 00:32:59,727 - INFO - PHASE 3.1: Processing fixture 1 of 11
+2026-09-12 00:32:59,727 - INFO -   Match: None vs None
+2026-09-12 00:32:59,728 - INFO -   Kickoff: 2026-09-12 14:00:00
+2026-09-12 00:32:59,728 - INFO -   Gameday tasks scheduled for: 2026-09-12 17:00:00
+2026-09-12 00:32:59,728 - INFO - Next gameday run scheduled for: 2026-09-12 17:00:00
+2026-09-12 00:32:59,728 - INFO - Sleeping for 987.0 minutes...
+2026-09-12 17:15:22,941 - INFO - ======================================================================
+2026-09-12 17:15:22,942 - INFO - FPL PIPELINE ORCHESTRATOR STARTED
+2026-09-12 17:15:22,942 - INFO - ======================================================================
+2026-09-12 17:15:22,942 - INFO - Season: 2627
+2026-09-12 17:15:22,942 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-12 17:15:22,942 - INFO - Scripts directory: C:\Users\JesseOnu\fpl sql rework\files to runn
+2026-09-12 17:15:23,000 - INFO - Loaded 380 fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-12 17:15:23,001 - INFO - 
+2026-09-12 17:15:23,001 - INFO - PHASE 1: Running initial daily refresh
+2026-09-12 17:15:23,001 - INFO - ======================================================================
+2026-09-12 17:15:23,001 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-12 17:15:23,001 - INFO - ======================================================================
+2026-09-12 17:15:23,002 - INFO - [gameweek_pull] Starting execution
+2026-09-12 17:15:23,002 - INFO - [gameweek_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\gameweek_pull.py
+2026-09-12 17:15:23,002 - INFO - [gameweek_pull] Requires input: True
+2026-09-12 17:15:34,206 - INFO - [gameweek_pull] Completed successfully (11.2s)
+2026-09-12 17:15:34,206 - INFO - [gameweek_pull] Waiting 30s before next task...
+2026-09-12 17:16:04,207 - INFO - [fpl_player_pull] Starting execution
+2026-09-12 17:16:04,207 - INFO - [fpl_player_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fpl_player_pull-.py
+2026-09-12 17:16:04,207 - INFO - [fpl_player_pull] Requires input: False
+2026-09-12 17:16:05,117 - INFO - [fpl_player_pull] Completed successfully (0.9s)
+2026-09-12 17:16:05,118 - INFO - [fpl_player_pull] Waiting 30s before next task...
+2026-09-12 17:16:35,133 - INFO - [get_fixtures] Starting execution
+2026-09-12 17:16:35,133 - INFO - [get_fixtures] File: C:\Users\JesseOnu\fpl sql rework\files to runn\get_fixtues.py
+2026-09-12 17:16:35,134 - INFO - [get_fixtures] Requires input: False
+2026-09-12 17:16:35,897 - INFO - [get_fixtures] Completed successfully (0.8s)
+2026-09-12 17:16:35,897 - INFO - [get_fixtures] Waiting 30s before next task...
+2026-09-12 17:17:05,909 - INFO - [fantasy_gw_data] Starting execution
+2026-09-12 17:17:05,909 - INFO - [fantasy_gw_data] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fantasy_gw_data.py
+2026-09-12 17:17:05,909 - INFO - [fantasy_gw_data] Requires input: False
+2026-09-12 17:17:06,853 - INFO - [fantasy_gw_data] Completed successfully (1.0s)
+2026-09-12 17:17:06,853 - INFO - [fantasy_gw_data] Waiting 30s before next task...
+2026-09-12 17:17:36,865 - INFO - [player_scores] Starting execution
+2026-09-12 17:17:36,865 - INFO - [player_scores] File: C:\Users\JesseOnu\fpl sql rework\files to runn\player_scores.py
+2026-09-12 17:17:36,865 - INFO - [player_scores] Requires input: False
+2026-09-12 17:17:37,720 - INFO - [player_scores] Completed successfully (0.9s)
+2026-09-12 17:17:37,721 - INFO - [player_scores] Waiting 30s before next task...
+2026-09-12 17:18:07,721 - INFO - [sql_upload] Starting execution
+2026-09-12 17:18:07,722 - INFO - [sql_upload] File: C:\Users\JesseOnu\fpl sql rework\files to runn\sql_table_upload_script.py
+2026-09-12 17:18:07,722 - INFO - [sql_upload] Requires input: False
+2026-09-12 17:18:26,520 - INFO - [sql_upload] Completed successfully (18.8s)
+2026-09-12 17:18:26,520 - INFO - ======================================================================
+2026-09-12 17:18:26,520 - INFO - All daily tasks completed successfully
+2026-09-12 17:18:26,520 - INFO - 
+2026-09-12 17:18:26,521 - INFO - PHASE 2: Checking for upcoming fixtures
+2026-09-12 17:18:26,730 - INFO - Found 10 fixtures in next 7 days
+2026-09-12 17:18:26,730 - INFO - 
+2026-09-12 17:18:26,730 - INFO - PHASE 3.1: Processing fixture 1 of 10
+2026-09-12 17:18:26,730 - INFO -   Match: None vs None
+2026-09-12 17:18:26,730 - INFO -   Kickoff: 2026-09-12 19:00:00
+2026-09-12 17:18:26,734 - INFO -   Gameday tasks scheduled for: 2026-09-12 22:00:00
+2026-09-12 17:18:26,734 - INFO - Next gameday run scheduled for: 2026-09-12 22:00:00
+2026-09-12 17:18:26,735 - INFO - Sleeping for 281.6 minutes...
+2026-09-12 22:00:00,105 - INFO - ======================================================================
+2026-09-12 22:00:00,129 - INFO - RUNNING GAMEDAY TASKS
+2026-09-12 22:00:00,129 - INFO - ======================================================================
+2026-09-12 22:00:00,129 - INFO - [get_fixtures] Starting execution
+2026-09-12 22:00:00,130 - INFO - [get_fixtures] File: C:\Users\JesseOnu\fpl sql rework\files to runn\get_fixtues.py
+2026-09-12 22:00:00,130 - INFO - [get_fixtures] Requires input: False
+2026-09-12 22:00:06,337 - INFO - [get_fixtures] Completed successfully (6.2s)
+2026-09-12 22:00:06,338 - INFO - [get_fixtures] Waiting 30s before next task...
+2026-09-12 22:00:36,339 - INFO - [fantasy_gw_data] Starting execution
+2026-09-12 22:00:36,339 - INFO - [fantasy_gw_data] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fantasy_gw_data.py
+2026-09-12 22:00:36,339 - INFO - [fantasy_gw_data] Requires input: False
+2026-09-12 22:00:37,294 - INFO - [fantasy_gw_data] Completed successfully (1.0s)
+2026-09-12 22:00:37,294 - INFO - [fantasy_gw_data] Waiting 30s before next task...
+2026-09-12 22:01:07,294 - INFO - [gameweek_pull] Starting execution
+2026-09-12 22:01:07,295 - INFO - [gameweek_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\gameweek_pull.py
+2026-09-12 22:01:07,295 - INFO - [gameweek_pull] Requires input: True
+2026-09-12 22:01:08,150 - INFO - [gameweek_pull] Completed successfully (0.9s)
+2026-09-12 22:01:08,150 - INFO - [gameweek_pull] Waiting 30s before next task...
+2026-09-12 22:01:38,151 - INFO - [player_scores] Starting execution
+2026-09-12 22:01:38,151 - INFO - [player_scores] File: C:\Users\JesseOnu\fpl sql rework\files to runn\player_scores.py
+2026-09-12 22:01:38,151 - INFO - [player_scores] Requires input: False
+2026-09-12 22:01:39,042 - INFO - [player_scores] Completed successfully (0.9s)
+2026-09-12 22:01:39,042 - INFO - [player_scores] Waiting 30s before next task...
+2026-09-12 22:02:09,043 - INFO - [sql_upload] Starting execution
+2026-09-12 22:02:09,043 - INFO - [sql_upload] File: C:\Users\JesseOnu\fpl sql rework\files to runn\sql_table_upload_script.py
+2026-09-12 22:02:09,043 - INFO - [sql_upload] Requires input: False
+2026-09-12 22:02:22,476 - INFO - [sql_upload] Completed successfully (13.4s)
+2026-09-12 22:02:22,476 - INFO - ======================================================================
+2026-09-12 22:02:22,476 - INFO - All gameday tasks completed successfully
+2026-09-12 22:02:22,477 - INFO -   Completed gameday tasks for None vs None
+2026-09-12 22:02:22,477 - INFO - 
+2026-09-12 22:02:22,477 - INFO - 
+2026-09-12 22:02:22,477 - INFO - PHASE 3.2: Processing fixture 2 of 10
+2026-09-12 22:02:22,477 - INFO -   Match: None vs None
+2026-09-12 22:02:22,478 - INFO -   Kickoff: 2026-09-13 13:00:00
+2026-09-12 22:02:22,478 - INFO -   Gameday tasks scheduled for: 2026-09-13 16:00:00
+2026-09-12 22:02:22,496 - INFO - Next gameday run scheduled for: 2026-09-13 16:00:00
+2026-09-12 22:02:22,496 - INFO - Sleeping for 1077.6 minutes...
+2026-09-13 00:30:15,206 - INFO - ======================================================================
+2026-09-13 00:30:15,206 - INFO - FPL PIPELINE ORCHESTRATOR STARTED
+2026-09-13 00:30:15,206 - INFO - ======================================================================
+2026-09-13 00:30:15,206 - INFO - Season: 2627
+2026-09-13 00:30:15,206 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-13 00:30:15,206 - INFO - Scripts directory: C:\Users\JesseOnu\fpl sql rework\files to runn
+2026-09-13 00:30:15,364 - INFO - Loaded 380 fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-13 00:30:15,365 - INFO - 
+2026-09-13 00:30:15,365 - INFO - PHASE 1: Running initial daily refresh
+2026-09-13 00:30:15,365 - INFO - ======================================================================
+2026-09-13 00:30:15,365 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-13 00:30:15,365 - INFO - ======================================================================
+2026-09-13 00:30:15,379 - INFO - [gameweek_pull] Starting execution
+2026-09-13 00:30:15,379 - INFO - [gameweek_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\gameweek_pull.py
+2026-09-13 00:30:15,379 - INFO - [gameweek_pull] Requires input: True
+2026-09-13 00:30:18,945 - INFO - [gameweek_pull] Completed successfully (3.6s)
+2026-09-13 00:30:18,946 - INFO - [gameweek_pull] Waiting 30s before next task...
+2026-09-13 00:30:48,947 - INFO - [fpl_player_pull] Starting execution
+2026-09-13 00:30:48,947 - INFO - [fpl_player_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fpl_player_pull-.py
+2026-09-13 00:30:48,947 - INFO - [fpl_player_pull] Requires input: False
+2026-09-13 00:30:49,843 - INFO - [fpl_player_pull] Completed successfully (0.9s)
+2026-09-13 00:30:49,843 - INFO - [fpl_player_pull] Waiting 30s before next task...
+2026-09-13 00:31:19,843 - INFO - [get_fixtures] Starting execution
+2026-09-13 00:31:19,843 - INFO - [get_fixtures] File: C:\Users\JesseOnu\fpl sql rework\files to runn\get_fixtues.py
+2026-09-13 00:31:19,843 - INFO - [get_fixtures] Requires input: False
+2026-09-13 00:31:20,528 - INFO - [get_fixtures] Completed successfully (0.7s)
+2026-09-13 00:31:20,528 - INFO - [get_fixtures] Waiting 30s before next task...
+2026-09-13 00:31:50,528 - INFO - [fantasy_gw_data] Starting execution
+2026-09-13 00:31:50,528 - INFO - [fantasy_gw_data] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fantasy_gw_data.py
+2026-09-13 00:31:50,528 - INFO - [fantasy_gw_data] Requires input: False
+2026-09-13 00:31:51,483 - INFO - [fantasy_gw_data] Completed successfully (1.0s)
+2026-09-13 00:31:51,483 - INFO - [fantasy_gw_data] Waiting 30s before next task...
+2026-09-13 00:32:21,483 - INFO - [player_scores] Starting execution
+2026-09-13 00:32:21,483 - INFO - [player_scores] File: C:\Users\JesseOnu\fpl sql rework\files to runn\player_scores.py
+2026-09-13 00:32:21,484 - INFO - [player_scores] Requires input: False
+2026-09-13 00:32:22,685 - INFO - [player_scores] Completed successfully (1.2s)
+2026-09-13 00:32:22,685 - INFO - [player_scores] Waiting 30s before next task...
+2026-09-13 00:32:52,686 - INFO - [sql_upload] Starting execution
+2026-09-13 00:32:52,686 - INFO - [sql_upload] File: C:\Users\JesseOnu\fpl sql rework\files to runn\sql_table_upload_script.py
+2026-09-13 00:32:52,686 - INFO - [sql_upload] Requires input: False
+2026-09-13 00:33:05,624 - INFO - [sql_upload] Completed successfully (12.9s)
+2026-09-13 00:33:05,624 - INFO - ======================================================================
+2026-09-13 00:33:05,624 - INFO - All daily tasks completed successfully
+2026-09-13 00:33:05,624 - INFO - 
+2026-09-13 00:33:05,624 - INFO - PHASE 2: Checking for upcoming fixtures
+2026-09-13 00:33:05,833 - INFO - Found 9 fixtures in next 7 days
+2026-09-13 00:33:05,833 - INFO - 
+2026-09-13 00:33:05,834 - INFO - PHASE 3.1: Processing fixture 1 of 9
+2026-09-13 00:33:05,834 - INFO -   Match: None vs None
+2026-09-13 00:33:05,834 - INFO -   Kickoff: 2026-09-13 13:00:00
+2026-09-13 00:33:05,834 - INFO -   Gameday tasks scheduled for: 2026-09-13 16:00:00
+2026-09-13 00:33:05,834 - INFO - Next gameday run scheduled for: 2026-09-13 16:00:00
+2026-09-13 00:33:05,834 - INFO - Sleeping for 926.9 minutes...
+2026-09-13 16:00:01,877 - INFO - ======================================================================
+2026-09-13 16:00:01,905 - INFO - RUNNING GAMEDAY TASKS
+2026-09-13 16:00:01,906 - INFO - ======================================================================
+2026-09-13 16:00:01,913 - INFO - [get_fixtures] Starting execution
+2026-09-13 16:00:01,914 - INFO - [get_fixtures] File: C:\Users\JesseOnu\fpl sql rework\files to runn\get_fixtues.py
+2026-09-13 16:00:01,914 - INFO - [get_fixtures] Requires input: False
+2026-09-13 16:00:20,576 - INFO - [get_fixtures] Completed successfully (18.7s)
+2026-09-13 16:00:20,576 - INFO - [get_fixtures] Waiting 30s before next task...
+2026-09-13 16:00:50,577 - INFO - [fantasy_gw_data] Starting execution
+2026-09-13 16:00:50,577 - INFO - [fantasy_gw_data] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fantasy_gw_data.py
+2026-09-13 16:00:50,577 - INFO - [fantasy_gw_data] Requires input: False
+2026-09-13 16:00:51,504 - INFO - [fantasy_gw_data] Completed successfully (0.9s)
+2026-09-13 16:00:51,504 - INFO - [fantasy_gw_data] Waiting 30s before next task...
+2026-09-13 16:01:21,504 - INFO - [gameweek_pull] Starting execution
+2026-09-13 16:01:21,505 - INFO - [gameweek_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\gameweek_pull.py
+2026-09-13 16:01:21,505 - INFO - [gameweek_pull] Requires input: True
+2026-09-13 16:01:22,303 - INFO - [gameweek_pull] Completed successfully (0.8s)
+2026-09-13 16:01:22,303 - INFO - [gameweek_pull] Waiting 30s before next task...
+2026-09-13 16:01:52,304 - INFO - [player_scores] Starting execution
+2026-09-13 16:01:52,304 - INFO - [player_scores] File: C:\Users\JesseOnu\fpl sql rework\files to runn\player_scores.py
+2026-09-13 16:01:52,304 - INFO - [player_scores] Requires input: False
+2026-09-13 16:01:53,119 - INFO - [player_scores] Completed successfully (0.8s)
+2026-09-13 16:01:53,119 - INFO - [player_scores] Waiting 30s before next task...
+2026-09-13 16:02:23,120 - INFO - [sql_upload] Starting execution
+2026-09-13 16:02:23,120 - INFO - [sql_upload] File: C:\Users\JesseOnu\fpl sql rework\files to runn\sql_table_upload_script.py
+2026-09-13 16:02:23,120 - INFO - [sql_upload] Requires input: False
+2026-09-13 16:02:39,047 - INFO - [sql_upload] Completed successfully (15.9s)
+2026-09-13 16:02:39,048 - INFO - ======================================================================
+2026-09-13 16:02:39,048 - INFO - All gameday tasks completed successfully
+2026-09-13 16:02:39,048 - INFO -   Completed gameday tasks for None vs None
+2026-09-13 16:02:39,048 - INFO - 
+2026-09-13 16:02:39,048 - INFO - 
+2026-09-13 16:02:39,048 - INFO - PHASE 3.2: Processing fixture 2 of 9
+2026-09-13 16:02:39,048 - INFO -   Match: None vs None
+2026-09-13 16:02:39,049 - INFO -   Kickoff: 2026-09-13 15:30:00
+2026-09-13 16:02:39,049 - INFO -   Gameday tasks scheduled for: 2026-09-13 18:30:00
+2026-09-13 16:02:39,091 - INFO - Next gameday run scheduled for: 2026-09-13 18:30:00
+2026-09-13 16:02:39,091 - INFO - Sleeping for 147.3 minutes...
+2026-09-13 18:30:00,048 - INFO - ======================================================================
+2026-09-13 18:30:00,091 - INFO - RUNNING GAMEDAY TASKS
+2026-09-13 18:30:00,092 - INFO - ======================================================================
+2026-09-13 18:30:00,092 - INFO - [get_fixtures] Starting execution
+2026-09-13 18:30:00,092 - INFO - [get_fixtures] File: C:\Users\JesseOnu\fpl sql rework\files to runn\get_fixtues.py
+2026-09-13 18:30:00,092 - INFO - [get_fixtures] Requires input: False
+2026-09-13 18:30:10,083 - INFO - [get_fixtures] Completed successfully (10.0s)
+2026-09-13 18:30:10,084 - INFO - [get_fixtures] Waiting 30s before next task...
+2026-09-13 18:30:40,084 - INFO - [fantasy_gw_data] Starting execution
+2026-09-13 18:30:40,084 - INFO - [fantasy_gw_data] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fantasy_gw_data.py
+2026-09-13 18:30:40,094 - INFO - [fantasy_gw_data] Requires input: False
+2026-09-13 18:30:41,067 - INFO - [fantasy_gw_data] Completed successfully (1.0s)
+2026-09-13 18:30:41,067 - INFO - [fantasy_gw_data] Waiting 30s before next task...
+2026-09-13 18:31:11,068 - INFO - [gameweek_pull] Starting execution
+2026-09-13 18:31:11,068 - INFO - [gameweek_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\gameweek_pull.py
+2026-09-13 18:31:11,068 - INFO - [gameweek_pull] Requires input: True
+2026-09-13 18:31:12,009 - INFO - [gameweek_pull] Completed successfully (0.9s)
+2026-09-13 18:31:12,009 - INFO - [gameweek_pull] Waiting 30s before next task...
+2026-09-13 18:31:42,010 - INFO - [player_scores] Starting execution
+2026-09-13 18:31:42,010 - INFO - [player_scores] File: C:\Users\JesseOnu\fpl sql rework\files to runn\player_scores.py
+2026-09-13 18:31:42,010 - INFO - [player_scores] Requires input: False
+2026-09-13 18:31:42,975 - INFO - [player_scores] Completed successfully (1.0s)
+2026-09-13 18:31:42,979 - INFO - [player_scores] Waiting 30s before next task...
+2026-09-13 18:32:12,980 - INFO - [sql_upload] Starting execution
+2026-09-13 18:32:12,980 - INFO - [sql_upload] File: C:\Users\JesseOnu\fpl sql rework\files to runn\sql_table_upload_script.py
+2026-09-13 18:32:12,980 - INFO - [sql_upload] Requires input: False
+2026-09-13 18:42:17,585 - ERROR - [sql_upload] Script exceeded timeout (600s). Likely waiting for input that wasn't sent.
+2026-09-13 18:42:17,610 - ERROR - [sql_upload] DEBUGGING INFO:
+2026-09-13 18:42:17,610 - ERROR - [sql_upload]   - Is the script calling input() without requiring input flag?
+2026-09-13 18:42:17,610 - ERROR - [sql_upload]   - Is there a network/API call that's hanging?
+2026-09-13 18:42:17,610 - ERROR - [sql_upload]   - Check the script for blocking operations
+2026-09-13 18:42:17,611 - INFO - ======================================================================
+2026-09-13 18:42:17,636 - WARNING - Gameday tasks completed with failures: sql_upload
+2026-09-13 18:42:17,636 - INFO -   Completed gameday tasks for None vs None
+2026-09-13 18:42:17,636 - INFO - 
+2026-09-13 18:42:17,645 - INFO - 
+2026-09-13 18:42:17,645 - INFO - PHASE 3.3: Processing fixture 3 of 9
+2026-09-13 18:42:17,645 - INFO -   Match: None vs None
+2026-09-13 18:42:17,705 - INFO -   Kickoff: 2026-09-14 19:00:00
+2026-09-13 18:42:17,705 - INFO -   Gameday tasks scheduled for: 2026-09-14 22:00:00
+2026-09-13 18:42:17,832 - INFO - Next gameday run scheduled for: 2026-09-14 22:00:00
+2026-09-13 18:42:17,833 - INFO - Sleeping for 1637.7 minutes...
+2026-09-13 19:23:09,185 - INFO - ======================================================================
+2026-09-13 19:23:09,185 - INFO - FPL PIPELINE ORCHESTRATOR STARTED
+2026-09-13 19:23:09,185 - INFO - ======================================================================
+2026-09-13 19:23:09,185 - INFO - Season: 2627
+2026-09-13 19:23:09,185 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-13 19:23:09,185 - INFO - Scripts directory: C:\Users\JesseOnu\fpl sql rework\files to runn
+2026-09-13 19:23:09,293 - INFO - Loaded 380 fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-13 19:23:09,294 - INFO - 
+2026-09-13 19:23:09,294 - INFO - PHASE 1: Running initial daily refresh
+2026-09-13 19:23:09,294 - INFO - ======================================================================
+2026-09-13 19:23:09,294 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-13 19:23:09,294 - INFO - ======================================================================
+2026-09-13 19:23:09,318 - INFO - [gameweek_pull] Starting execution
+2026-09-13 19:23:09,318 - INFO - [gameweek_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\gameweek_pull.py
+2026-09-13 19:23:09,318 - INFO - [gameweek_pull] Requires input: True
+2026-09-13 19:23:10,361 - INFO - [gameweek_pull] Completed successfully (1.1s)
+2026-09-13 19:23:10,362 - INFO - [gameweek_pull] Waiting 30s before next task...
+2026-09-13 19:23:40,381 - INFO - [fpl_player_pull] Starting execution
+2026-09-13 19:23:40,381 - INFO - [fpl_player_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fpl_player_pull-.py
+2026-09-13 19:23:40,381 - INFO - [fpl_player_pull] Requires input: False
+2026-09-13 19:23:41,151 - INFO - [fpl_player_pull] Completed successfully (0.8s)
+2026-09-13 19:23:41,151 - INFO - [fpl_player_pull] Waiting 30s before next task...
+2026-09-13 19:24:11,155 - INFO - [get_fixtures] Starting execution
+2026-09-13 19:24:11,155 - INFO - [get_fixtures] File: C:\Users\JesseOnu\fpl sql rework\files to runn\get_fixtues.py
+2026-09-13 19:24:11,155 - INFO - [get_fixtures] Requires input: False
+2026-09-13 19:24:11,813 - INFO - [get_fixtures] Completed successfully (0.7s)
+2026-09-13 19:24:11,813 - INFO - [get_fixtures] Waiting 30s before next task...
+2026-09-13 19:24:41,905 - INFO - [fantasy_gw_data] Starting execution
+2026-09-13 19:24:41,905 - INFO - [fantasy_gw_data] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fantasy_gw_data.py
+2026-09-13 19:24:41,905 - INFO - [fantasy_gw_data] Requires input: False
+2026-09-13 19:24:42,853 - INFO - [fantasy_gw_data] Completed successfully (1.0s)
+2026-09-13 19:24:42,854 - INFO - [fantasy_gw_data] Waiting 30s before next task...
+2026-09-13 19:25:12,896 - INFO - [player_scores] Starting execution
+2026-09-13 19:25:12,896 - INFO - [player_scores] File: C:\Users\JesseOnu\fpl sql rework\files to runn\player_scores.py
+2026-09-13 19:25:12,896 - INFO - [player_scores] Requires input: False
+2026-09-13 19:25:13,739 - INFO - [player_scores] Completed successfully (0.9s)
+2026-09-13 19:25:13,739 - INFO - [player_scores] Waiting 30s before next task...
+2026-09-13 19:25:43,753 - INFO - [sql_upload] Starting execution
+2026-09-13 19:25:43,753 - INFO - [sql_upload] File: C:\Users\JesseOnu\fpl sql rework\files to runn\sql_table_upload_script.py
+2026-09-13 19:25:43,753 - INFO - [sql_upload] Requires input: False
+2026-09-13 19:25:55,343 - INFO - [sql_upload] Completed successfully (11.6s)
+2026-09-13 19:25:55,344 - INFO - ======================================================================
+2026-09-13 19:25:55,344 - INFO - All daily tasks completed successfully
+2026-09-13 19:25:55,344 - INFO - 
+2026-09-13 19:25:55,344 - INFO - PHASE 2: Checking for upcoming fixtures
+2026-09-13 19:25:55,530 - INFO - Found 11 fixtures in next 7 days
+2026-09-13 19:25:55,530 - INFO - 
+2026-09-13 19:25:55,530 - INFO - PHASE 3.1: Processing fixture 1 of 11
+2026-09-13 19:25:55,530 - INFO -   Match: None vs None
+2026-09-13 19:25:55,530 - INFO -   Kickoff: 2026-09-14 19:00:00
+2026-09-13 19:25:55,530 - INFO -   Gameday tasks scheduled for: 2026-09-14 22:00:00
+2026-09-13 19:25:55,530 - INFO - Next gameday run scheduled for: 2026-09-14 22:00:00
+2026-09-13 19:25:55,530 - INFO - Sleeping for 1594.1 minutes...
+2026-09-14 00:00:02,534 - INFO - ======================================================================
+2026-09-14 00:00:02,547 - INFO - FPL PIPELINE ORCHESTRATOR STARTED
+2026-09-14 00:00:02,547 - INFO - ======================================================================
+2026-09-14 00:00:02,547 - INFO - Season: 2627
+2026-09-14 00:00:02,547 - INFO - Base path: C:\Users\JesseOnu\fpl sql rework
+2026-09-14 00:00:02,547 - INFO - Scripts directory: C:\Users\JesseOnu\fpl sql rework\files to runn
+2026-09-14 00:00:02,553 - INFO - Loaded 380 fixtures from C:\Users\JesseOnu\fpl sql rework\fixtures\2627fixtures.csv
+2026-09-14 00:00:02,561 - INFO - 
+2026-09-14 00:00:02,561 - INFO - PHASE 1: Running initial daily refresh
+2026-09-14 00:00:02,561 - INFO - ======================================================================
+2026-09-14 00:00:02,561 - INFO - RUNNING DAILY TASKS (Midnight)
+2026-09-14 00:00:02,561 - INFO - ======================================================================
+2026-09-14 00:00:02,562 - INFO - [gameweek_pull] Starting execution
+2026-09-14 00:00:02,562 - INFO - [gameweek_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\gameweek_pull.py
+2026-09-14 00:00:02,562 - INFO - [gameweek_pull] Requires input: True
+2026-09-14 00:00:04,988 - INFO - [gameweek_pull] Completed successfully (2.4s)
+2026-09-14 00:00:04,988 - INFO - [gameweek_pull] Waiting 30s before next task...
+2026-09-14 00:00:34,988 - INFO - [fpl_player_pull] Starting execution
+2026-09-14 00:00:34,989 - INFO - [fpl_player_pull] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fpl_player_pull-.py
+2026-09-14 00:00:34,989 - INFO - [fpl_player_pull] Requires input: False
+2026-09-14 00:00:35,807 - INFO - [fpl_player_pull] Completed successfully (0.8s)
+2026-09-14 00:00:35,807 - INFO - [fpl_player_pull] Waiting 30s before next task...
+2026-09-14 00:01:05,808 - INFO - [get_fixtures] Starting execution
+2026-09-14 00:01:05,808 - INFO - [get_fixtures] File: C:\Users\JesseOnu\fpl sql rework\files to runn\get_fixtues.py
+2026-09-14 00:01:05,808 - INFO - [get_fixtures] Requires input: False
+2026-09-14 00:01:06,536 - INFO - [get_fixtures] Completed successfully (0.7s)
+2026-09-14 00:01:06,537 - INFO - [get_fixtures] Waiting 30s before next task...
+2026-09-14 00:01:36,537 - INFO - [fantasy_gw_data] Starting execution
+2026-09-14 00:01:36,537 - INFO - [fantasy_gw_data] File: C:\Users\JesseOnu\fpl sql rework\files to runn\fantasy_gw_data.py
+2026-09-14 00:01:36,538 - INFO - [fantasy_gw_data] Requires input: False
+2026-09-14 00:01:37,342 - INFO - [fantasy_gw_data] Completed successfully (0.8s)
+2026-09-14 00:01:37,342 - INFO - [fantasy_gw_data] Waiting 30s before next task...
+2026-09-14 00:02:07,342 - INFO - [player_scores] Starting execution
+2026-09-14 00:02:07,343 - INFO - [player_scores] File: C:\Users\JesseOnu\fpl sql rework\files to runn\player_scores.py
+2026-09-14 00:02:07,343 - INFO - [player_scores] Requires input: False
+2026-09-14 00:02:08,106 - INFO - [player_scores] Completed successfully (0.8s)
+2026-09-14 00:02:08,106 - INFO - [player_scores] Waiting 30s before next task...
+2026-09-14 00:02:38,106 - INFO - [sql_upload] Starting execution
+2026-09-14 00:02:38,106 - INFO - [sql_upload] File: C:\Users\JesseOnu\fpl sql rework\files to runn\sql_table_upload_script.py
+2026-09-14 00:02:38,107 - INFO - [sql_upload] Requires input: False
+2026-09-14 00:02:51,671 - INFO - [sql_upload] Completed successfully (13.6s)
+2026-09-14 00:02:51,671 - INFO - ======================================================================
+2026-09-14 00:02:51,671 - INFO - All daily tasks completed successfully
+2026-09-14 00:02:51,671 - INFO - 
+2026-09-14 00:02:51,671 - INFO - PHASE 2: Checking for upcoming fixtures
+2026-09-14 00:02:51,949 - INFO - Found 11 fixtures in next 7 days
+2026-09-14 00:02:51,949 - INFO - 
+2026-09-14 00:02:51,949 - INFO - PHASE 3.1: Processing fixture 1 of 11
+2026-09-14 00:02:51,949 - INFO -   Match: None vs None
+2026-09-14 00:02:51,949 - INFO -   Kickoff: 2026-09-14 19:00:00
+2026-09-14 00:02:51,950 - INFO -   Gameday tasks scheduled for: 2026-09-14 22:00:00
+2026-09-14 00:02:51,950 - INFO - Next gameday run scheduled for: 2026-09-14 22:00:00
+2026-09-14 00:02:51,950 - INFO - Sleeping for 1317.1 minutes...
